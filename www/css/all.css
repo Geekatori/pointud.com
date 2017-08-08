@@ -1175,6 +1175,9 @@ hr {
   text-align: center; }
   .modal--contact .container {
     width: 56%; }
+    @media screen and (max-width: 768px) {
+      .modal--contact .container {
+        width: 90%; } }
 
 .modal--about {
   text-align: left; }
@@ -1271,7 +1274,11 @@ body {
   body.loading * {
     animation: none; }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
   padding: 0;
   font-weight: 300;
@@ -1380,7 +1387,9 @@ img {
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  width: 90%; }
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
 
 .btn {
   display: inline-block;

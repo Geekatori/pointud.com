@@ -34,15 +34,19 @@ body {
     @media screen and (max-width: 768px) {
         font-size: 1.7rem;
     }
-    
-    &.loading{
+
+    &.loading {
         * {
             animation: none;
         }
     }
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
     margin: 0;
     padding: 0;
     font-weight: 300;
@@ -83,8 +87,7 @@ h3 {
 
 p {
     font-size: 2rem;
-    margin: 0;
-    //opacity: 0.75;
+    margin: 0; //opacity: 0.75;
     @media screen and (max-width: 768px) {
         font-size: 1.7rem;
     }
@@ -92,7 +95,7 @@ p {
         text-decoration: none;
         display: inline-block;
         margin-left: 1rem;
-        margin-right: 1rem; 
+        margin-right: 1rem;
         &::after {
             content: '';
             border-bottom: 1px solid rgba(255, 255, 255, .5);
@@ -104,7 +107,7 @@ p {
         &:hover {
             text-decoration: none;
             &::after {
-                transform: translate3d(0,2rem,0);
+                transform: translate3d(0, 2rem, 0);
                 opacity: 0;
                 transition: transform .1s, opacity .1s;
             }
@@ -161,7 +164,7 @@ img {
 .content {
     //animation: content #{$duration-content} #{$delay-content} forwards;
     backface-visibility: hidden;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     cursor: default;
     display: flex;
     align-items: center;
@@ -169,6 +172,8 @@ img {
     flex-direction: column;
     height: 100%;
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn {

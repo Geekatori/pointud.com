@@ -45,12 +45,14 @@ $config->load('./config/config.php');
                         <img src="images/mathieu-pointud.jpg" alt="Mathieu Pointud">
                     </div>
                     <div class="col-sm-9">
-                        Je suis <h3>Intégrateur HTML CSS JS</h3> avec 10 ans d'expérience et je travaille en agence depuis 7 ans. Je travaille sur des projets pour de l'événementiel, grands-comptes, e-commerces ou institutionnels. J'ai un grand soucis du détail pour construire des sites durables, maintenables, reponsives, accessibles et optimisés SEO. J'utilise quotidiennement <h3>SASS</h3>, <h3>JavaScript</h3> / <h3>jQuery</h3> et <h3>Gulp</h3>.<br>J'ai aussi une passion pour le vélo.
-                        <!--<a href="pdf/mathieu-pointud.pdf" title="Télécharger le CV de Mathieu Pointud" class="btn btn-default">Télécharger mon CV</a>-->
+                        Je suis <h3>Intégrateur HTML CSS JS</h3> avec 10 ans d'expérience et je travaille en agence depuis 7 ans. Je travaille sur des projets pour de l'événementiel, grands-comptes, e-commerces ou institutionnels. J'ai un grand soucis du détail pour construire des sites durables, maintenables, responsives, accessibles et optimisés SEO. J'utilise quotidiennement <h3>SASS</h3>, <h3>JavaScript</h3> / <h3>jQuery</h3> et <h3>Gulp</h3>.
+                        <br>
+                        J'ai aussi une passion pour le vélo.
+                        <?php //<a href="pdf/mathieu-pointud.pdf" title="Télécharger le CV de Mathieu Pointud" class="btn btn-default">Télécharger mon CV</a> ?>
                     </div>
                 </div>
             </div>
-            <a href="#" class="close" title="Fermer">&times;</a>
+            <a href="#" class="close" title="Fermer" aria-label="Fermer">&times;</a>
         </div>
         <form enctype="application/x-www-form-urlencoded" id="contact-form" class="modal modal--contact form-horizontal" method="post">
             <div class="container">
@@ -74,7 +76,7 @@ $config->load('./config/config.php');
                     <button type="submit" class="btn btn-default"><?php echo $config->get('fields.btn-send'); ?></button>
                 </div>
             </div>
-            <a href="#" class="close" title="Fermer" id="closeForm">&times;</a>
+            <a href="#" class="close" title="Fermer" id="closeForm" aria-label="Fermer">&times;</a>
         </form>
     </div>  
     <script src="js/float-labels.min.js"></script>
