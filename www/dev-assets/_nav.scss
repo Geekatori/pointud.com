@@ -1,0 +1,56 @@
+nav {
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	z-index: 1;
+	transform: translateX(-50%);
+
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		@include animation(nav-icons #{$duration-nav-icons} ease-in-out forwards);
+		@include backface-visibility(hidden);
+		@include transform(translate3d(0,0,0));
+		display: inline-block;
+		opacity: 0;
+
+		@for $x from 1 through 10 {
+			&:nth-child(#{$x}) {
+				@include animation-delay($delay-nav-icons + ($x * $delay-nav-icon));
+			}
+		}
+	}
+	
+	a {
+		border: 0;
+		display: inline-block;
+		
+		&:before {
+			@include transition(all .2s ease-in-out);
+			display: block;
+			font-size: $size-nav-icon;
+			text-align: center;
+		}
+
+		@each $network, $color in 	(facebook, $facebook),
+									(twitter, $twitter),
+									(codepen, $codepen),
+									(linkedin, $linkedin),
+									(github, $github) {
+			&.fa-#{$network} {
+				&:hover {
+					color: $color;
+				}
+			}
+		}
+		
+		span {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+$text-color:                #fff;
+$bg-color:                  #2c2d26;
+
+$facebook:                  #3a5795;
+$twitter:                   #2290bf;
+$codepen:                   #111;
+$github:                    #333;
+$linkedin:                  #0e7db7;
+
+$duration-bg:               60s;
+$duration-wrapper:          3s;
+$duration-content:          1s;
+
+$delay-wrapper:             $duration-wrapper - 1s;
+$delay-content:             $delay-wrapper - 0.75s;
+$delay-nav-icons:           $delay-content + $duration-content - 1s;

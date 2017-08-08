@@ -1,0 +1,52 @@
+// animation style
+@mixin animation-none{
+	-webkit-transition:none;
+	-moz-transition:none;
+	transition:none;
+}
+/*
+@mixin animation{
+	@include transition-property(all);
+	@include transition-duration(.5s);
+	@include transition-timing-function(cubic-bezier(0, 1, 0.5, 1));
+	&:hover {
+		@include transition-property(all);
+		@include transition-duration(.5s);
+		@include transition-timing-function(cubic-bezier(0, 1, 0.5, 1));
+	}
+}
+*/
+@mixin breakpoint($desktop){
+	@media screen and (max-width:$desktop){
+		@content;
+	}
+}
+@mixin breakpoint($desktop-castom){
+	@media screen and (max-width:$desktop-castom){
+		@content;
+	}
+}
+@mixin breakpoint($tablet){
+	@media screen and (max-width:$tablet){
+		@content;
+	}
+}
+@mixin breakpoint($mobile){
+	@media screen and (max-width:$mobile){
+		@content;
+	}
+}
+@mixin breakpoint-min($desktop-min){
+	@media screen and (min-width:$desktop-min){
+		@content;
+	}
+}
+@mixin breakpoint-min($desktop-castom-min){
+	@media screen and (min-width:$desktop-castom-min){
+		@content;
+	}
+}
+
+
+
+

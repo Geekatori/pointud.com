@@ -1,0 +1,124 @@
+.modal {
+    opacity: 0;
+    z-index: -1;
+    transform: scale(1.05);
+    position: relative;
+    transition: none;
+    .close {
+        text-decoration: none;
+        position: absolute;
+        margin: 1rem 1.5rem;
+        top: 0;
+        right: 0;
+        font-size: 3rem;
+        line-height: 3rem;
+        transition: transform .3s;
+        &:hover {
+            transform: rotateZ(90deg);
+            transition: transform .1s;
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        @media screen and (max-width: 768px) {
+            width: 90%;
+        }        
+    }
+}
+
+.modal--contact {
+    text-align: center;
+    .container {
+        width: 56%;
+    }
+}
+
+.modal--about {
+    text-align: left;
+    img {
+        margin: .6rem auto 2rem;
+        display: block;
+    }
+    .btn {
+        display: table;
+        margin-top: 2rem;
+    }
+}
+
+.visible-contact,
+.visible-about {
+    .bg {
+        opacity: 0;
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(356.6deg) scale(1.15);
+    }
+    .main {
+        opacity: 0;
+    }
+}
+.visible-contact {
+    .modal--contact {
+        opacity: 1;
+        z-index: 2;
+        transform: scale(1);
+        transition: opacity .3s ease-out, transform .45s ease-out;
+    }
+}
+.visible-about {
+    .modal--about {
+        opacity: 1;
+        z-index: 2;
+        transform: scale(1);
+        transition: opacity .3s ease-out, transform .45s ease-out;
+    }
+}
+
+.form-group {
+    width: 100%;
+}
+
+.control-label {
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+    transition: font-size .3s;
+    margin-bottom: .7rem;
+    @media screen and (max-width: 768px) {
+        font-size: 1.7rem;
+    }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border-radius: .4rem;
+    border: 1px solid #fff;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: font-size .3s;
+    @media screen and (max-width: 768px) {
+        font-size: 1.7rem;
+    }
+}
+
+.alert {
+    width: 56%;
+    display: inline-block;
+    position: relative;
+    top: -1em;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.required {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000px" height="1000px" viewBox="0 0 1000 1000" zoomAndPan="disable">
+    <style type="text/css"><![CDATA[
+		line {
+			stroke: rgba(255,255,255,0.45);
+			stroke-width: 0.5px;
+		}
+		
+		polygon.two {
+			fill: rgba(255,255,255,0.15);
+		}
+				
+    ]]></style>
+	<polygon class="two" points="0,0 1000,1000 0,1000 0,0" />
+	<line x1="0" y1="0" x2="1000" y2="1000" />
+</svg>
