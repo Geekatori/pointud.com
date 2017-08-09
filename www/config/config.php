@@ -5,7 +5,7 @@ return [
         'prefix' => '[Contact Form]'
     ],
     'emails' => [
-        'to'   => 'mathieu.tu@protonmail.ch',
+        'to'   => 'mathieu@pointud.com',
         'from' => 'postmaster@geekatori.com'
     ],
     'messages' => [
