@@ -1,9 +1,10 @@
 (function() {
 
-    // Remove "loading" class once the page has fully loaded.
         window.onload = function() {
+            // Remove "loading" class once the page has fully loaded.
             document.body.className = '';
             showModal();
+            downloadResume();
         }
 
     // Prevent scrolling on touch.
@@ -33,15 +34,26 @@
         let visibleContactClass = 'visible-contact';
         let visibleAboutClass   = 'visible-about';
 
-
         showFrm.addEventListener('click', function(e){
             e.preventDefault();
             document.body.classList.add(visibleContactClass);
+            ga('send', {
+              hitType: 'event',
+              eventCategory: 'Modal',
+              eventAction: 'show',
+              eventLabel: 'Show Contact'
+            });
         });
 
         showAbt.addEventListener('click', function(e){
             e.preventDefault();
             document.body.classList.add(visibleAboutClass);
+            ga('send', {
+              hitType: 'event',
+              eventCategory: 'Modal',
+              eventAction: 'show',
+              eventLabel: 'Show About'
+            });
         });
 
         Array.from(closeBtn).forEach(function(e){
@@ -51,4 +63,18 @@
             });
         })
     };
+
+    // Download Resume GA
+    function downloadResume() {
+        let dlCvBtn = document.getElementById('download-resume');
+
+        dlCvBtn.addEventListener('click', function(){
+            ga('send', {
+              hitType: 'event',
+              eventCategory: 'Pdf',
+              eventAction: 'download',
+              eventLabel: 'Download Resume'
+            });
+        });
+    }
 })();
