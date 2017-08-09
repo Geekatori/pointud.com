@@ -1253,11 +1253,6 @@ hr {
 html {
   font-size: 10px; }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box; }
-
 body {
   color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
