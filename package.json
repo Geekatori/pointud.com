@@ -1,0 +1,36 @@
+{
+  "name": "pointud.com",
+  "version": "1.0.0",
+  "description": "pointud.com",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "exports-loader": "^0.6.4",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.5.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "imagemin-pngquant": "^5.0.1",
+    "imports-loader": "^0.7.1",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^1.15.0",
+    "webpack-stream": "^3.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "contributors": [
+    "mathieu@pointud.com"
+  ],
+  "license": "private",
+  "private": true,
+  "engines": {
+    "node": ">=7.2.1",
+    "npm": ">=4.0.3"
+  }
+}

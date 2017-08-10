@@ -1,0 +1,120 @@
+// CLEARFIX
+@mixin clearfix() {
+    &::before,
+    &::after {
+        content: ' ';
+        display: table;
+    }
+    &::after {
+        clear: both;
+    }
+}
+
+//IMAGE-SET
+@mixin image-set($url) {
+    background-image: url($url);
+    background-image: image-set($url) 1x, image-set($url) 2x;
+}
+
+//FONT-FACE
+@mixin font-face($folder, $name) {
+    font-family: '$name';
+    src: url('../../fonts/#{$folder}/#{$name}.eot'),
+         url('../fonts/#{$folder}/#{$name}.svg#$name') format('svg'),
+         url('../fonts/#{$folder}/#{$name}.eot') format('embedded-opentype'),
+         url('../fonts/#{$folder}/#{$name}.woff2') format('woff2'),
+         url('../fonts/#{$folder}/#{$name}.woff') format('woff'),
+         url('../fonts/#{$folder}/#{$name}.ttf') format('truetype');
+}
+
+// Polyfill object-fit and object-position on images on IE9, IE10, IE11, Edge, Safari...
+@mixin object-fit($fit: fill, $position: null) {
+    object-fit: $fit;
+    @if $position {
+        object-position: $position;
+        font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+    } @else {
+        font-family: 'object-fit: #{$fit}';
+    }
+}
+
+// STABILO
+@mixin stabilo($color, $width: 10px) {
+    color: $white;
+    background-color: $color;
+    box-shadow: $width 0 0 $color, -$width 0 0 $color;
+    padding: round($width / 2) 0 round($width / 3);
+    display: inline;
+    position: relative;
+    left: $width;
+}
+
+// TRIANGLE
+@mixin triangle-haut($color, $width, $height) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 $width / 2 $height;
+    border-color: transparent transparent $color;
+}
+
+@mixin triangle-bas($color, $width, $height) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $height $width / 2 0;
+    border-color: $color transparent transparent;
+}
+
+@mixin triangle-gauche($color, $width, $height) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $height / 2 $width $height / 2 0;
+    border-color: transparent $color transparent transparent;
+}
+
+@mixin triangle-droite($color, $width, $height) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $height / 2 0 $height / 2 $width;
+    border-color: transparent transparent transparent $color;
+}
+
+@mixin triangle-haut-gauche($color, $width, $height) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: $height $width 0 0;
+    border-color: $color transparent transparent;
+}
+
+// PLACEHOLDER
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+    &:-moz-placeholder {
+        @content
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &:-ms-input-placeholder {
+        @content
+    }
+}
+
+// DEVICE SPECIFIC
+@mixin ipad($orientation) {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: $orientation) {
+        @content
+    }
+}
+
+@mixin chrome() {
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        @content
+    }
+}

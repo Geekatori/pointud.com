@@ -1,0 +1,7 @@
+// Please override Bootstrap variables to modify Bootstrap buttons
+// See _variables.scss
+
+.btn {
+    position: relative;
+    transition: background-color $trsd;
+}

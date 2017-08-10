@@ -1,0 +1,84 @@
+//
+// CUSTOM VARIABLES
+//
+
+$trsd:                    .3s;
+$perspective:             2000px;
+$easeincubic:             cubic-bezier(.55, .06, .68, .19);
+$easeoutcubic:            cubic-bezier(.22, .61, .36, 1);
+$easeinexpo:              cubic-bezier(.95, .05, .795, .035);
+$easeoutexpo:             cubic-bezier(.19, 1, .22, 1);
+$easeinoutexpo:           cubic-bezier(1, 0, 0, 1);
+
+$white:                   #fff;
+$black:                   #000;
+$shark:                   #191c1e;
+$scooter:                 #28c8e1;
+
+// Don't use colors or color names directly in your code.
+
+// For exemple:
+$light-bg:                rgba($white, .8);
+$dark-bg:                 rgba($shark, .8);
+$border-color:            $shark;
+
+$text-color:                #fff;
+$bg-color:                  #2c2d26;
+
+$facebook:                  #3a5795;
+$twitter:                   #2290bf;
+$codepen:                   #111;
+$github:                    #333;
+$linkedin:                  #0e7db7;
+
+$duration-bg:               60s;
+$duration-wrapper:          3s;
+$duration-content:          1s;
+
+$delay-wrapper:             $duration-wrapper - 1s;
+$delay-content:             $delay-wrapper - 0.75s;
+$delay-nav-icons:           $delay-content + $duration-content - 1s;
+
+//
+//
+// OVERWRITE BOOTSTRAP VARIABLES HERE
+//
+// Copy the variable from the raw bootstrap variable file, and copy it here
+//
+//
+
+// It is located at node_modules/bootstrap/scss/_variables.scss
+//
+// Colors
+$brand-primary:           $scooter;
+$brand-secondary:         $shark;
+// Body
+$body-color:              $shark;
+// Links
+$link-color:              $body-color;
+$link-decoration:         underline;
+$link-hover-decoration:   none;
+// Fonts
+$font-family-sans-serif:  'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-size-base:          1.6rem;
+$font-size-lg:            2rem;
+$font-size-sm:            1.4rem;
+$font-size-xs:            1.2rem;
+$font-size-h1:            4rem;
+$font-size-h2:            3.2rem;
+$font-size-h3:            2.8rem;
+$font-size-h4:            2.4rem;
+$font-size-h5:            2rem;
+$font-size-h6:            1.6rem;
+$headings-font-family:    $font-family-sans-serif;
+$headings-font-weight:    700;
+$headings-color:          $body-color;
+// Components
+$border-radius:           .3rem;
+// Buttons
+$btn-padding-x:           1.8rem;
+$btn-padding-y:           1.2rem;
+$btn-font-weight:         bold;
+$btn-secondary-color:     #fff;
+$btn-secondary-bg:        $brand-secondary;
+$btn-secondary-border:    $btn-secondary-bg;

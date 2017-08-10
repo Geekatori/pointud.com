@@ -12,11 +12,11 @@ $config->load('./config/config.php');
 ?><!DOCTYPE html>
 <html lang="fr-FR">
 <head>
-    <title>Intégrateur HTML/CSS - Développeur Front End à Clermont-Ferrand</title>
+    <title>Intégrateur Web HTML/CSS - Développeur Front End à Clermont-Ferrand</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Mathieu Pointud - Intégrateur HTML CSS à Clermont-Ferrand, Puy-de-Dôme 63, Auvergne" />
+    <meta name="description" content="Mathieu Pointud - Intégrateur Web HTML CSS à Clermont-Ferrand, Puy-de-Dôme 63, Auvergne" />
     <meta name="keywords" content="Intégrateur HTML, Développeur Front-end" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css" />
