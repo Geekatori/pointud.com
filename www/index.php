@@ -16,7 +16,7 @@ $config->load('./config/config.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Mathieu Pointud - Intégrateur HTML CSS à Clermont-Ferrand, Puy-de-Dôme (63), Auvergne" />
+    <meta name="description" content="Mathieu Pointud - Intégrateur HTML CSS à Clermont-Ferrand, Puy-de-Dôme 63, Auvergne" />
     <meta name="keywords" content="Intégrateur HTML, Développeur Front-end" />
     <link rel="stylesheet" href="css/all.css" />
 </head>
@@ -30,7 +30,15 @@ $config->load('./config/config.php');
         ga('send', 'pageview');
     </script>
     <div class="wrapper">
-        <div class="bg"></div>
+        <div class="bg">
+            <img    src="images/sublime-text-1920.jpg" 
+                    srcset="images/sublime-text-768.jpg 768w, 
+                            images/sublime-text-992.jpg 992w, 
+                            images/sublime-text-1200.jpg 1200w, 
+                            images/sublime-text-1920.jpg 1920w"
+                    size="100vw"
+                    alt="Sublime Text 3">
+        </div>
         <div class="main">
             <div class="content" itemscope itemtype="http://schema.org/Person">
                 <h1><span itemprop="jobTitle">Intégrateur HTML - Développeur front-end</span><br><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Clermont-Ferrand</span></span></h1>
@@ -42,7 +50,11 @@ $config->load('./config/config.php');
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3">
-                        <img src="images/mathieu-pointud.jpg" alt="Mathieu Pointud">
+                        <img src="images/mathieu-pointud.jpg" 
+                             srcset="images/mathieu-pointud-320.jpg, 390w,
+                             images/mathieu-pointud.jpg 768w"
+                             size="100vw"
+                             alt="Mathieu Pointud">
                     </div>
                     <div class="col-sm-9">
                         Je suis <h3>Intégrateur HTML CSS JS</h3> avec 10 ans d'expérience et je travaille en agence depuis 7 ans. Je travaille sur des projets pour de l'événementiel, grands-comptes, e-commerces ou institutionnels. J'ai un grand soucis du détail pour construire des sites durables, maintenables, responsives, accessibles et optimisés SEO. J'utilise quotidiennement <h3>SASS</h3>, <h3>JavaScript</h3> / <h3>jQuery</h3> et <h3>Gulp</h3>.
