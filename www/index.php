@@ -12,12 +12,13 @@ $config->load('./config/config.php');
 ?><!DOCTYPE html>
 <html lang="fr-FR">
 <head>
-    <title>Mathieu Pointud - Intégrateur HTML/CSS - Développeur Front End à Clermont-Ferrand, Auvergne.</title>
+    <title>Intégrateur HTML/CSS - Développeur Front End à Clermont-Ferrand</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Mathieu Pointud - Intégrateur HTML CSS à Clermont-Ferrand, Puy-de-Dôme 63, Auvergne" />
     <meta name="keywords" content="Intégrateur HTML, Développeur Front-end" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css" />
 </head>
 <body class="loading">
@@ -29,6 +30,7 @@ $config->load('./config/config.php');
         ga('create', 'UA-4127539-8', 'auto');
         ga('send', 'pageview');
     </script>
+    <noscript>Veuillez activer javaScript pour profiter de toutes les fonctionnalités !</noscript>
     <div class="wrapper">
         <div class="bg">
             <img    src="images/sublime-text-1920.jpg" 
@@ -37,7 +39,7 @@ $config->load('./config/config.php');
                             images/sublime-text-1200.jpg 1200w, 
                             images/sublime-text-1920.jpg 1920w"
                     size="100vw"
-                    alt="Sublime Text 3">
+                    alt="Sublime Text 3 développeur web">
         </div>
         <div class="main">
             <div class="content" itemscope itemtype="http://schema.org/Person">
@@ -50,11 +52,7 @@ $config->load('./config/config.php');
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3">
-                        <img src="images/mathieu-pointud.jpg" 
-                             srcset="images/mathieu-pointud-320.jpg, 390w,
-                             images/mathieu-pointud.jpg 768w"
-                             size="100vw"
-                             alt="Mathieu Pointud">
+                        <img src="images/mathieu-pointud-320.jpg" alt="Mathieu Pointud">
                     </div>
                     <div class="col-sm-9">
                         Je suis <h3>Intégrateur HTML CSS JS</h3> avec 10 ans d'expérience et je travaille en agence depuis 7 ans. Je travaille sur des projets pour de l'événementiel, grands-comptes, e-commerces ou institutionnels. J'ai un grand soucis du détail pour construire des sites durables, maintenables, responsives, accessibles et optimisés SEO. J'utilise quotidiennement <h3>SASS</h3>, <h3>JavaScript</h3> / <h3>jQuery</h3> et <h3>Gulp</h3>.
@@ -92,12 +90,12 @@ $config->load('./config/config.php');
         </form>
     </div>  
     <script src="js/float-labels.min.js"></script>
-    <script src="js/contact-form.js"></script>
+    <script src="js/contact-form.min.js"></script>
     <script type="text/javascript">
         new ContactForm('#contact-form', {
             endpoint: './process.php'
         });
     </script>
-    <script src="js/init.js"></script>
+    <script src="js/init.min.js"></script>
 </body>
 </html>

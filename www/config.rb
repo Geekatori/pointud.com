@@ -4,7 +4,8 @@ sass_dir = "dev-assets"
 images_dir = "images"
 javascripts_dir = "js"
 fonts_dir = "fonts"
-output_style = :nested
+
+output_style = :compressed
 relative_assets = true
 line_comments = false
 color_output = false
