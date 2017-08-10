@@ -11,8 +11,7 @@ const named = require('vinyl-named');
 // Add some entry points here
 // 1 entry point map `foo.js` to 1 output bundled file `foo.bundle.js`, `bar.js` output `bar.bundle.js`, etc.
 const entries = [
-    `${SRC.DECOUPE_JS}/es5/main.js`,
-    `${SRC.NODE_MODULE_PATH}/tether/dist/js/tether.js`
+    `${SRC.DECOUPE_JS}/es5/main.js`
 ];
 
 let webpackConfig = {

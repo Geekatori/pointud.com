@@ -19,7 +19,7 @@ $config->load('./config/config.php');
     <meta name="description" content="Mathieu Pointud - Intégrateur Web HTML CSS à Clermont-Ferrand, Puy-de-Dôme 63, Auvergne" />
     <meta name="keywords" content="Intégrateur HTML, Développeur Front-end" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="loading">
     <script>
@@ -89,13 +89,11 @@ $config->load('./config/config.php');
             <a href="#" class="close" title="Fermer" id="closeForm" aria-label="Fermer">&times;</a>
         </form>
     </div>  
-    <script src="js/float-labels.min.js"></script>
-    <script src="js/contact-form.min.js"></script>
+    <script src="js/main.build.js"></script>
     <script type="text/javascript">
         new ContactForm('#contact-form', {
             endpoint: './process.php'
         });
     </script>
-    <script src="js/init.min.js"></script>
 </body>
 </html>

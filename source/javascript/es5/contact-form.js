@@ -186,7 +186,7 @@
                 this.empty(this.form);
                 this.form.insertAdjacentHTML('beforeend', success);
 
-                let okFrm = document.getElementById('hide-form');
+                var okFrm = document.getElementById('hide-form');
                 
                 okFrm.addEventListener('click', function(e){
                     e.preventDefault();

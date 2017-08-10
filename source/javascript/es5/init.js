@@ -21,18 +21,18 @@
         console.log('Sinon, on peut aussi discuter autour d\'une 🍺 !');
 
     // Floating labels
-    let floatlabels = new FloatLabels( 'form', {
+    var floatlabels = new FloatLabels( 'form', {
         style: 2
     });
 
     // Show modal
     function showModal(){
-        let showFrm  = document.getElementById('showForm');
-        let showAbt  = document.getElementById('showAbout');
-        let closeBtn = document.getElementsByClassName('close');
+        var showFrm  = document.getElementById('showForm');
+        var showAbt  = document.getElementById('showAbout');
+        var closeBtn = document.getElementsByClassName('close');
 
-        let visibleContactClass = 'visible-contact';
-        let visibleAboutClass   = 'visible-about';
+        var visibleContactClass = 'visible-contact';
+        var visibleAboutClass   = 'visible-about';
 
         showFrm.addEventListener('click', function(e){
             e.preventDefault();
@@ -66,7 +66,7 @@
 
     // Download Resume GA
     function downloadResume() {
-        let dlCvBtn = document.getElementById('download-resume');
+        var dlCvBtn = document.getElementById('download-resume');
 
         dlCvBtn.addEventListener('click', function(){
             ga('send', {
