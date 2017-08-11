@@ -482,6 +482,7 @@ AddDefaultCharset utf-8
 # https://w3c.github.io/webappsec-csp/
 
 <IfModule mod_headers.c>
+    Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
     Header set Content-Security-Policy "script-src 'self'; object-src 'self'"
     # `mod_headers` cannot match based on the content-type, however,
     # the `Content-Security-Policy` response header should be send
@@ -490,7 +491,6 @@ AddDefaultCharset utf-8
         Header unset Content-Security-Policy
     </FilesMatch>
     Header set Content-Security-Policy "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:"
-    Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure
     Header always set X-FRAME-OPTIONS "DENY"
     Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains"
     <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">

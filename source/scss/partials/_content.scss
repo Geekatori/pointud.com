@@ -38,6 +38,10 @@ p {
 a {
     color: $text-color;
     text-decoration: none;
+    &:hover,
+    &:focus {
+        color: $text-color;
+    }
 }
 
 h1 {

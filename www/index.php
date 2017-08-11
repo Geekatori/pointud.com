@@ -91,6 +91,7 @@ $config->load('./config/config.php');
     </div>  
     <script src="js/main.build.js"></script>
     <script type="text/javascript">
+        /* global ContactForm */
         new ContactForm('#contact-form', {
             endpoint: './process.php'
         });

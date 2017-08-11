@@ -179,7 +179,7 @@
                 }
             } else {
                 var success = this.template(
-                    '<div class="alert alert-success">{report} <p><a href="#" title="Retour" id="hide-form">Retour</a></p></div>', {
+                    '<div class="container alert alert-success">{report} <p><a href="#" title="Retour" id="hide-form">Retour</a></p></div>', {
                     report: data.message
                 });
 

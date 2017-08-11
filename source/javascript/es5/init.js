@@ -1,24 +1,25 @@
+/* global FloatLabels ga */
 (function() {
 
-        window.onload = function() {
-            // Remove "loading" class once the page has fully loaded.
-            document.body.className = '';
-            showModal();
-            downloadResume();
-        }
+    window.onload = function() {
+        // Remove "loading" class once the page has fully loaded.
+        document.body.className = '';
+        showModal();
+        downloadResume();
+    }
 
     // Prevent scrolling on touch.
-        window.ontouchmove = function() {
-            return false;
-        }
+    window.ontouchmove = function() {
+        return false;
+    }
 
     // Fix scroll position on orientation change.
-        window.onorientationchange = function() {
-            document.body.scrollTop = 0;
-        }
+    window.onorientationchange = function() {
+        document.body.scrollTop = 0;
+    }
 
     // Let's have a beer!
-        console.log('Sinon, on peut aussi discuter autour d\'une 🍺 !');
+    console.log('Sinon, on peut aussi discuter autour d\'une 🍺 !');
 
     // Floating labels
     var floatlabels = new FloatLabels( 'form', {
@@ -62,7 +63,7 @@
                 document.body.classList.remove(visibleContactClass, visibleAboutClass);
             });
         })
-    };
+    }
 
     // Download Resume GA
     function downloadResume() {
