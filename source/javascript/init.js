@@ -18,6 +18,8 @@
         document.body.scrollTop = 0;
     }
 
+    // Source code
+    console.log('Le code source de ce site est disponible sur https://www.github.com/geekatori/pointud.com');
     // Let's have a beer!
     console.log('Sinon, on peut aussi discuter autour d\'une 🍺 !');
 
