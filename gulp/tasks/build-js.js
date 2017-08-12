@@ -9,9 +9,9 @@ const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 
 const entries = [
-    `${SRC.DECOUPE_JS}/es5/contact-form.js`,
-    `${SRC.DECOUPE_JS}/es5/float-labels.js`,
-    `${SRC.DECOUPE_JS}/es5/init.js`
+    `${SRC.JAVASCRIPTS}/es5/contact-form.js`,
+    `${SRC.JAVASCRIPTS}/es5/float-labels.js`,
+    `${SRC.JAVASCRIPTS}/es5/init.js`
 ];
 
 gulp.task('build-js', () => {
@@ -22,5 +22,5 @@ gulp.task('build-js', () => {
     .pipe(sourcemaps.write('./', {
         includeContent: false
     }))
-    .pipe(gulp.dest(DST.DECOUPE_JS))
+    .pipe(gulp.dest(DST.JAVASCRIPTS))
 });

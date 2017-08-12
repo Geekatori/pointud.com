@@ -6,13 +6,13 @@
 */
 
 /* decoupe related paths */
-const DECOUPE_BASE      = `www`;
-const DECOUPE_IMAGES    = `${DECOUPE_BASE}/images`;
-const DECOUPE_JS        = `${DECOUPE_BASE}/js`;
-const DECOUPE_STYLES    = `${DECOUPE_BASE}/css`;
+const BASE          = `www`;
+const IMAGES        = `${BASE}/images`;
+const JAVASCRIPTS   = `${BASE}/js`;
+const STYLES        = `${BASE}/css`;
 
 // Exports
-exports.DECOUPE_BASE    = DECOUPE_BASE;
-exports.DECOUPE_IMAGES  = DECOUPE_IMAGES;
-exports.DECOUPE_JS      = DECOUPE_JS;
-exports.DECOUPE_STYLES  = DECOUPE_STYLES;
+exports.BASE        = BASE;
+exports.IMAGES      = IMAGES;
+exports.JAVASCRIPTS = JAVASCRIPTS;
+exports.STYLES      = STYLES;

@@ -38,7 +38,7 @@ $config->load('./config/config.php');
                             images/sublime-text-992.jpg 992w, 
                             images/sublime-text-1200.jpg 1200w, 
                             images/sublime-text-1920.jpg 1920w"
-                    size="100vw"
+                    sizes="100vw"
                     alt="Sublime Text 3 développeur web">
         </div>
         <div class="main">

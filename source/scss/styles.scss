@@ -1,7 +1,6 @@
 // ¯\_(ツ)_/¯ //
-@import 'variables';            // Write your own variables and overwrite Bootstrap variables here
-@import 'bootstrap-components'; // Load needed Bootstrap components here
-@import 'modules/mixins';
+@import 'variables';
+@import 'bootstrap-components';
 @import 'vendors/float-labels';
 @import 'partials/animations';
 @import 'partials/modal';

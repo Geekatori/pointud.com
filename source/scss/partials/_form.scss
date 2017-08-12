@@ -1,3 +1,36 @@
-// Please override Bootstrap variables to modify Bootstrap form first
-// See _variables.scss
+.form-group {
+    width: 100%;
+}
 
+.control-label {
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+    transition: font-size .3s;
+    margin-bottom: .7rem;
+    @media screen and (max-width: 768px) {
+        font-size: 1.7rem;
+    }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border-radius: .4rem;
+    border: 1px solid #fff;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: font-size .3s;
+    @media screen and (max-width: 768px) {
+        font-size: 1.7rem;
+    }
+}
+
+.required {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

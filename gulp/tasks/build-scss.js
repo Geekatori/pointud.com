@@ -32,7 +32,7 @@ const minifyConfig = {
 
 /* Compile scss files */
 gulp.task('build-scss', () => {
-    return gulp.src(`${SRC.DECOUPE_SASS}/**/*.scss`)
+    return gulp.src(`${SRC.SASS}/**/*.scss`)
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(sass({
             style: 'expanded',
@@ -42,5 +42,5 @@ gulp.task('build-scss', () => {
         .pipe(sourcemaps.write('./', {
             includeContent: false
         }))
-        .pipe(gulp.dest(DST.DECOUPE_STYLES));
+        .pipe(gulp.dest(DST.STYLES));
 });

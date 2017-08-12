@@ -8,8 +8,8 @@ const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 
 gulp.task('build-img', () => {
-    return gulp.src(`${SRC.DECOUPE_IMAGES}/**/*`)
-        .pipe(changed(DST.DECOUPE_IMAGES)) // Check which images have changed
+    return gulp.src(`${SRC.IMAGES}/**/*`)
+        .pipe(changed(DST.IMAGES)) // Check which images have changed
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{
@@ -17,5 +17,5 @@ gulp.task('build-img', () => {
             }],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest(DST.DECOUPE_IMAGES));
+        .pipe(gulp.dest(DST.IMAGES));
 });
