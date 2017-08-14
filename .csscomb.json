@@ -191,6 +191,8 @@
             "background-clip",
             "background-origin",
             "background-size",
+            "object-fit",
+            "object-position",
             "box-decoration-break",
             "box-shadow",
             "text-shadow",
