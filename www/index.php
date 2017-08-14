@@ -45,7 +45,7 @@ $config->load('./config/config.php');
             <div class="content" itemscope itemtype="http://schema.org/Person">
                 <h1><span itemprop="jobTitle">Intégrateur HTML - Développeur front-end</span><br><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Clermont-Ferrand</span></span></h1>
                 <h2 itemprop="name">Mathieu Pointud</h2>
-                <p><a href="#" id="showAbout">À propos</a><a href="#" id="showForm">Me contacter</a></p>
+                <div class="btn-group"><a href="#" title="À propos" class="btn btn-link" id="showAbout">À propos</a><a href="#" title="Me contacter" class="btn btn-link" id="showForm">Me contacter</a></div>
             </div>
         </div>
         <div class="modal modal--about">
@@ -96,5 +96,6 @@ $config->load('./config/config.php');
             endpoint: './process.php'
         });
     </script>
+    <!-- Le code source de ce site est disponible sur https://github.com/geekatori/pointud.com -->
 </body>
 </html>
