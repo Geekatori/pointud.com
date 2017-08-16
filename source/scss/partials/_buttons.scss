@@ -20,11 +20,11 @@
     z-index: 1;
     position: relative;
     overflow: hidden;
-    color: #fff;
+    color: $body-color;
     border-width: 0;
     border-color: transparent;
     border-radius: 0;
-    background-color: #fff;
+    background-color: $white;
     &::before,
     &::after {
         z-index: -1;

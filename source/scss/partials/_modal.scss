@@ -1,7 +1,6 @@
 .modal {
     z-index: -1;
     position: fixed;
-    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,7 +29,7 @@
         align-items: center;
         height: 100%;
         @media screen and (max-width: 768px) {
-            width: 90%;
+            max-width: 90%;
         }
     }
 }
@@ -38,10 +37,16 @@
 .modal--contact {
     text-align: center;
     .container {
-        width: 56%;
+        max-width: 56%;
         @media screen and (max-width: 768px) {
-            width: 90%;
+            max-width: 90%;
         }
+    }
+    .visible-contact & {
+        z-index: 2;
+        transition: opacity .3s ease-out, transform .45s ease-out;
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
@@ -55,34 +60,22 @@
         display: table;
         margin-top: 2rem;
     }
+    .visible-about & {
+        z-index: 2;
+        transition: opacity .3s ease-out, transform .45s ease-out;
+        transform: scale(1);
+        opacity: 1;        
+    }
 }
 
-.visible-contact,
-.visible-about {
+.visible-about,
+.visible-contact {
     .bg {
         transform: rotateX(0deg) rotateY(360deg) rotateZ(356.6deg) scale(1.15);
         opacity: 0;
     }
     .main {
         opacity: 0;
-    }
-}
-
-.visible-contact {
-    .modal--contact {
-        z-index: 2;
-        transition: opacity .3s ease-out, transform .45s ease-out;
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-.visible-about {
-    .modal--about {
-        z-index: 2;
-        transition: opacity .3s ease-out, transform .45s ease-out;
-        transform: scale(1);
-        opacity: 1;
     }
 }
 

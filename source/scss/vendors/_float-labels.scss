@@ -21,7 +21,7 @@ $float-labels-defaults: (
 	font-size-small         : 12px,
 	font-weight             : 400,
 	transition-easing       : ease-in-out,
-	transition-speed        : 0.2s,
+	transition-speed        : 0.2s
 );
 
 @function fl($value) {
