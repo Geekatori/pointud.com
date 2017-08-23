@@ -1,7 +1,7 @@
 /* eslint-env node, es6 */
 'use strict';
 
-//const NODE_MODULE_PATH = `node_modules`;
+const NODE_MODULE_PATH = `node_modules`;
 
 // Sources
 const SRCBASE          = `source`;
@@ -29,7 +29,7 @@ const minifycss        = require('gulp-cssnano');
 // Configs
 const jsEntries = [
     `${SRCJAVASCRIPTS}/contact-form.js`,
-    `${SRCJAVASCRIPTS}/float-labels.js`,
+    `${NODE_MODULE_PATH}/float-labels.js/dist/float-labels.min.js`,
     `${SRCJAVASCRIPTS}/init.js`
 ];
 

@@ -2,35 +2,35 @@
     width: 100%;
 }
 
-.control-label {
-    font-size: 2rem;
+.form-control {
+    color: $body-color;
     display: block;
-    width: 100%;
-    margin-bottom: .7rem;
     transition: font-size .3s;
+    //&:invalid {
+    //    border-bottom-color: red;
+    //}
     @media screen and (max-width: 768px) {
         font-size: 1.7rem;
     }
 }
 
-.form-control {
-    font-size: 2rem;
-    display: block;
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    transition: font-size .3s;
-    border: 1px solid $border-color;
-    border-radius: .4rem;
-    background-color: transparent;
-    @media screen and (max-width: 768px) {
-        font-size: 1.7rem;
+.fl-form {
+    input.fl-input,
+    select.fl-select,
+    textarea.fl-textarea {
+        border-width: 0 0 1px;
+        &:valid {
+            border-bottom-color: $valid;
+        }
+    }
+    .fl-is-required:before {
+        content: none;
     }
 }
 
 .required {
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
 }

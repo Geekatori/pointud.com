@@ -1,6 +1,9 @@
 $white:                   #fff;
 $black:                   #000;
 $grey:                    #2c2d26;
+$green:                   #317d31;
+
+$valid:                   $green;
 
 // Bootstrap
 //
@@ -42,3 +45,28 @@ $headings-color:          $body-color;
 $btn-padding-x:           2.5rem;
 $btn-padding-y:           1rem;
 $btn-font-weight:         300;
+
+// Float labels
+$float-labels: (
+    base-height             : 24px,
+    base-padding            : 6px,
+    border-radius           : 0,
+    border-width            : 1px,
+    margin-bottom           : 20px,
+    color-background        : transparent,
+    color-background-active : transparent,
+    color-background-focus  : transparent,
+    color-border            : $border-color,
+    color-border-active     : $border-color,
+    color-border-focus      : $border-color,
+    color-placeholder       : $body-color,
+    color-required          : $body-color,
+    color-text              : $body-color,
+    color-text-focus        : $body-color,
+    line-height             : 1.5,
+    font-size               : 20px,
+    font-size-small         : 12px,
+    font-weight             : 400,
+    transition-easing       : ease-in-out,
+    transition-speed        : 0.2s
+);

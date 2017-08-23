@@ -67,25 +67,26 @@ $config->load('./config/config.php');
         <form enctype="application/x-www-form-urlencoded" id="contact-form" class="modal modal--contact form-horizontal" method="post">
             <div class="container">
                 <div class="form-group" id="name-field">
-                    <label for="form-name"><?php echo $config->get('fields.name'); ?></label>
                     <input type="text" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
+                    <label for="form-name"><span><?php echo $config->get('fields.name'); ?></span></label>
                 </div>
                 <div class="form-group" id="email-field">
-                    <label for="form-email"><?php echo $config->get('fields.email'); ?></label>
                     <input type="email" class="form-control" id="form-email" name="form-email" placeholder="<?php echo $config->get('fields.email'); ?>" required>
+                    <label for="form-email"><span><?php echo $config->get('fields.email'); ?></span></label>
                 </div>
                 <div class="form-group" id="subject-field">
-                    <label for="form-subject"><?php echo $config->get('fields.subject'); ?></label>
                     <input type="text" class="form-control" id="form-subject" name="form-subject" placeholder="<?php echo $config->get('fields.subject'); ?>" required>
+                    <label for="form-subject"><span><?php echo $config->get('fields.subject'); ?></span></label>
                 </div>
                 <div class="form-group" id="message-field">
-                    <label for="form-message"><?php echo $config->get('fields.message'); ?></label>
                     <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder="<?php echo $config->get('fields.message'); ?>" required></textarea>
+                    <label for="form-message"><span><?php echo $config->get('fields.message'); ?></span></label>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-default"><?php echo $config->get('fields.btn-send'); ?></button>
                 </div>
             </div>
+            <small class="required">Tous les champs sont requis.</small>
             <a href="#" class="close" title="Fermer" id="closeForm" aria-label="Fermer">&times;</a>
         </form>
     </div>  
