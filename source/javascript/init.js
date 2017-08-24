@@ -1,11 +1,11 @@
-/* global FloatLabels ga */
+/* global FloatLabels */
 (function() {
 
     window.onload = function() {
         // Remove "loading" class once the page has fully loaded.
         document.body.className = '';
         showModal();
-        downloadResume();
+        moveBg();
     }
 
     // Prevent scrolling on touch.
@@ -27,7 +27,7 @@
     });
 
     // Show modal
-    function showModal(){
+    function showModal() {
         var showFrm  = document.getElementById('showForm');
         var showAbt  = document.getElementById('showAbout');
         var closeBtn = document.getElementsByClassName('close');
@@ -38,23 +38,11 @@
         showFrm.addEventListener('click', function(e){
             e.preventDefault();
             document.body.classList.add(visibleContactClass);
-            ga('send', {
-              hitType: 'event',
-              eventCategory: 'Modal',
-              eventAction: 'show',
-              eventLabel: 'Show Contact'
-            });
         });
 
         showAbt.addEventListener('click', function(e){
             e.preventDefault();
             document.body.classList.add(visibleAboutClass);
-            ga('send', {
-              hitType: 'event',
-              eventCategory: 'Modal',
-              eventAction: 'show',
-              eventLabel: 'Show About'
-            });
         });
 
         Array.from(closeBtn).forEach(function(e){
@@ -78,17 +66,19 @@
         }
     }
 
-    // Download Resume GA
-    function downloadResume() {
-        var dlCvBtn = document.getElementById('download-resume');
+    // Move background
+    function moveBg() {
+        var movementStrength = 25;
+        var height = movementStrength / window.innerHeight;
+        var width = movementStrength / window.innerWidth;
+        var backgroundImage = document.querySelector('.bg img');
 
-        dlCvBtn.addEventListener('click', function(){
-            ga('send', {
-              hitType: 'event',
-              eventCategory: 'Pdf',
-              eventAction: 'download',
-              eventLabel: 'Download Resume'
-            });
-        });
+        document.body.mousemove = function(){
+            var pageX = e.pageX - (width / 2);
+            var pageY = e.pageY - (height / 2);
+            var newvalueX = width * pageX * -1 - 25;
+            var newvalueY = height * pageY * -1 - 50;
+            backgroundImage.style.transform = 'transform(" newvalueX + "px, " + newvalueY + "px, 0)';
+        }
     }
 })();
