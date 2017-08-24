@@ -19,7 +19,7 @@
     }
 
     // Let's have a beer!
-    console.log('Sinon, on peut aussi discuter autour d\'une 🍺 !');
+    console.log('Sinon, on peut aussi discuter autour d\'un 🍵 ou d\'une 🍺 !');
 
     // Floating labels
     var floatlabels = new FloatLabels( 'form', {
