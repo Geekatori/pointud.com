@@ -8,20 +8,6 @@
     transition: none;
     transform: scale(1.05);
     opacity: 0;
-    .close {
-        font-size: 3rem;
-        line-height: 3rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 1rem 1.5rem;
-        transition: transform .3s;
-        text-decoration: none;
-        &:hover {
-            transition: transform .1s;
-            transform: rotateZ(90deg);
-        }
-    }
     .container {
         display: flex;
         flex-direction: column;
@@ -31,6 +17,23 @@
         @media screen and (max-width: 768px) {
             max-width: 90%;
         }
+    }
+}
+
+.close {
+    font-size: 3rem;
+    line-height: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    margin: 1rem;
+    transition: transform .3s;
+    transform-origin: 50% 50%;
+    text-decoration: none;
+    &:hover {
+        transition: transform .1s;
+        transform: rotateZ(90deg);
     }
 }
 

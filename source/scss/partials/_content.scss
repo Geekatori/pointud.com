@@ -27,7 +27,18 @@ a {
     }
 }
 
+h1,
+h2,
+h3 {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    margin-bottom: $headings-margin-bottom;
+    color: $headings-color;
+}
+
 h1 {
+    font-size: $h1-font-size;
     margin-bottom: 2.7rem;
     @media screen and (max-width: 768px) {
         font-size: 1.8rem;
@@ -35,6 +46,7 @@ h1 {
 }
 
 h2 {
+    font-size: $h2-font-size;
     order: -1;
     letter-spacing: -.035em;
     @media screen and (max-width: 768px) {
@@ -43,11 +55,17 @@ h2 {
 }
 
 h3 {
+    font-size: $h3-font-size;
     display: inline;
     margin-bottom: 0;
     @media screen and (max-width: 768px) {
         font-size: $font-size-sm;
     }
+}
+
+small {
+    font-size: $small-font-size;
+    font-weight: $font-weight-normal;
 }
 
 img {
@@ -90,6 +108,41 @@ img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+[class^=col-] {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media screen and (min-width: 576px) {
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-sm-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
     }
 }
 
