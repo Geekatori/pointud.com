@@ -4,7 +4,9 @@
         "es6": true,
         "amd": true,
         "browser": true,
-        "jquery": true
+        "jquery": false
     },
-    "indent": 4
+    "rules": {
+        "indent": ["error", 4]        
+    }
 }
