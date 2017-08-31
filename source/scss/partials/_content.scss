@@ -39,7 +39,7 @@ h3 {
 
 h1 {
     font-size: $h1-font-size;
-    margin-bottom: 2.7rem;
+    margin-bottom: 2.7vw;
 }
 
 h2 {
@@ -72,10 +72,10 @@ img {
     height: 100%;
     animation: appear 3s forwards;
     opacity: 0;
-    border: .75vw solid $border-color;
 }
 
 .main {
+    border: .75vw solid $border-color;
     position: fixed;
     top: 0;
     left: 0;
