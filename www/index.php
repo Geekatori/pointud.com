@@ -22,15 +22,7 @@ $config->load('./config/config.php');
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="loading">
-    <script>
-        // Don't be evil
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-4127539-8', 'auto');
-        ga('send', 'pageview');
-    </script>
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-4127539-8', 'auto');ga('send', 'pageview');</script>
     <noscript>Veuillez activer JavaScript pour profiter de toutes les fonctionnalités !</noscript>
     <div class="wrapper">
         <div class="bg">
@@ -40,10 +32,10 @@ $config->load('./config/config.php');
             <div class="content" itemscope itemtype="http://schema.org/Person">
                 <h1><span itemprop="jobTitle">Intégrateur HTML - Développeur front-end</span><br><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Clermont-Ferrand</span></span></h1>
                 <h2 itemprop="name">Mathieu Pointud</h2>
-                <div class="btn-group"><a href="#" title="À propos" class="btn btn-link" id="showAbout">À propos</a><a href="#" title="Me contacter" class="btn btn-link" id="showForm">Me contacter</a></div>
+                <div class="btn-group"><a href="#" title="À propos" class="btn btn-link" id="showAbout" role="button">À propos</a><a href="#" title="Me contacter" class="btn btn-link" id="showForm" role="button">Me contacter</a></div>
             </div>
         </div>
-        <div class="modal modal--about">
+        <div class="modal modal--about" tabindex="-1">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3">
@@ -53,13 +45,13 @@ $config->load('./config/config.php');
                         Je suis <h3>Intégrateur HTML CSS JS</h3> avec 10 ans d'expérience et je travaille en agence depuis 7 ans. Je travaille sur des projets pour de l'événementiel, grands-comptes, e-commerces ou institutionnels. J'ai un grand soucis du détail pour construire des sites durables, maintenables, responsives, accessibles et optimisés SEO. J'utilise quotidiennement <h3>SASS</h3>, <h3>JavaScript</h3> / <h3>jQuery</h3> et <h3>Gulp</h3>.
                         <br>
                         J'ai aussi une passion pour le vélo.
-                        <a href="pdf/cv-mathieu-pointud.pdf" title="Télécharger le CV de Mathieu Pointud" class="btn btn-default" id="download-resume">Télécharger mon CV</a>
+                        <a href="pdf/cv-mathieu-pointud.pdf" title="Télécharger le CV de Mathieu Pointud" class="btn btn-default" id="download-resume" role="button">Télécharger mon CV</a>
                     </div>
                 </div>
             </div>
             <a href="#" class="close" title="Fermer" aria-label="Fermer">&times;</a>
         </div>
-        <form enctype="application/x-www-form-urlencoded" id="contact-form" class="modal modal--contact form-horizontal" method="post">
+        <form enctype="application/x-www-form-urlencoded" id="contact-form" class="modal modal--contact form-horizontal" method="post" tabindex="-1">
             <div class="container">
                 <div class="form-group" id="name-field">
                     <input type="text" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
@@ -86,12 +78,7 @@ $config->load('./config/config.php');
         </form>
     </div>  
     <script src="js/main.build.js"></script>
-    <script type="text/javascript">
-        /* global ContactForm */
-        new ContactForm('#contact-form', {
-            endpoint: './process.php'
-        });
-    </script>
+    <script type="text/javascript">new ContactForm('#contact-form', {endpoint: './process.php'});</script>
     <!-- Le code source de ce site est disponible sur https://github.com/geekatori/pointud.com -->
 </body>
 </html>
