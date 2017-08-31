@@ -57,10 +57,10 @@
     function moveBg() {
         var backgroundImage = document.querySelector(".bg img");
 
-        var resizeTimer;
+        var moveTimer;
         document.body.onmousemove = function(e){
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(function() {
+            clearTimeout(moveTimer);
+            moveTimer = setTimeout(function() {
                 var pageX = e.pageX - (window.innerWidth / 2);
                 var pageY = e.pageY - (window.innerHeight / 2);
                 var newX = roundToTwo(-5 * pageX / window.innerWidth);
