@@ -40,27 +40,18 @@ h3 {
 h1 {
     font-size: $h1-font-size;
     margin-bottom: 2.7rem;
-    @media screen and (max-width: 768px) {
-        font-size: 1.8rem;
-    }
 }
 
 h2 {
     font-size: $h2-font-size;
     order: -1;
     letter-spacing: -.035em;
-    @media screen and (max-width: 768px) {
-        font-size: 4rem;
-    }
 }
 
 h3 {
     font-size: $h3-font-size;
     display: inline;
     margin-bottom: 0;
-    @media screen and (max-width: 768px) {
-        font-size: $font-size-sm;
-    }
 }
 
 small {
@@ -81,6 +72,7 @@ img {
     height: 100%;
     animation: appear 3s forwards;
     opacity: 0;
+    border: .75vw solid $border-color;
 }
 
 .main {
