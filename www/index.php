@@ -18,7 +18,7 @@ $config->load('./config/config.php');
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Mathieu Pointud - Intégrateur Web HTML CSS à Clermont-Ferrand, Puy-de-Dôme 63, Auvergne" />
     <meta name="keywords" content="Intégrateur HTML, Développeur Front-end" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Fira+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body class="loading">
