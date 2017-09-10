@@ -53,42 +53,51 @@ const minifyCssConfig = {
     }
 };
 
+const imageminConfig = {
+    progressive: true,
+    svgoPlugins: [{
+        removeViewBox: false
+    }],
+    use: [pngquant()]
+};
+
+const sourcemapsInitConfig = {
+    loadMaps: true
+}
+
+const sourcemapsWriteConfig = {
+    includeContent: false
+}
+
+const sassConfig = {
+    style: 'expanded',
+    errLogToConsole: true
+}
+
+// Tasks
 gulp.task('build-img', () => {
     return gulp.src(`${SRCIMAGES}/**/*`)
-    .pipe(changed(DSTIMAGES))
-    .pipe(imagemin({
-        progressive: true,
-        svgoPlugins: [{
-            removeViewBox: false
-        }],
-        use: [pngquant()]
-    }))
-    .pipe(gulp.dest(DSTIMAGES));
+        .pipe(changed(DSTIMAGES))
+        .pipe(imagemin(imageminConfig))
+        .pipe(gulp.dest(DSTIMAGES));
 });
 
 gulp.task('build-js', () => {
     return gulp.src(jsEntries)
-    .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(concat('main.build.js'))
-    .pipe(uglify())
-    .pipe(sourcemaps.write('./', {
-        includeContent: false
-    }))
-    .pipe(gulp.dest(DSTJAVASCRIPTS))
+        .pipe(sourcemaps.init(sourcemapsInitConfig))
+        .pipe(concat('main.build.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write('./', sourcemapsWriteConfig))
+        .pipe(gulp.dest(DSTJAVASCRIPTS))
 });
 
 gulp.task('build-scss', () => {
     return gulp.src(`${SRCSASS}/**/*.scss`)
-    .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(sass({
-        style: 'expanded',
-        errLogToConsole: true
-    }).on('error', sass.logError))
-    .pipe(minifycss(minifyCssConfig))
-    .pipe(sourcemaps.write('./', {
-        includeContent: false
-    }))
-    .pipe(gulp.dest(DSTSTYLES));
+        .pipe(sourcemaps.init(sourcemapsInitConfig))
+        .pipe(sass(sassConfig).on('error', sass.logError))
+        .pipe(minifycss(minifyCssConfig))
+        .pipe(sourcemaps.write('./', sourcemapsWriteConfig))
+        .pipe(gulp.dest(DSTSTYLES));
 });
 
 gulp.task('build-all', [

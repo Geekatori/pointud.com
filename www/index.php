@@ -30,8 +30,8 @@ $config->load('./config/config.php');
         </div>
         <div class="main">
             <div class="content" itemscope itemtype="http://schema.org/Person">
-                <h1><span itemprop="jobTitle">Intégrateur HTML - Développeur front-end</span><br><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Clermont-Ferrand</span></span></h1>
-                <h2 itemprop="name">Mathieu Pointud</h2>
+                <h1 itemprop="name">Mathieu Pointud</h1>
+                <h2><span itemprop="jobTitle">Intégrateur HTML - Développeur front-end</span><br><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Clermont-Ferrand</span></span></h2>
                 <div class="btn-group"><a href="#" title="À propos" class="btn btn-link" id="showAbout" role="button">À propos</a><a href="#" title="Me contacter" class="btn btn-link" id="showForm" role="button">Me contacter</a></div>
             </div>
         </div>
