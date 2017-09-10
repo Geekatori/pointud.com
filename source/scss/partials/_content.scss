@@ -42,7 +42,8 @@ h1 {
     order: -1;
     letter-spacing: -.035em;
     opacity: 0;
-    animation: content 1s forwards;
+    animation: content $elmtduration forwards;
+    animation-delay: $elmtdelay;
     @media screen and (max-width: 768px) {
         font-size: 3.6rem;
     }
@@ -52,8 +53,8 @@ h2 {
     font-size: $h2-font-size;
     margin-bottom: 2.7vw;
     opacity: 0;
-    animation: content 1s forwards;
-    animation-delay: .5s;
+    animation: content $elmtduration forwards;
+    animation-delay: $elmtdelay + $elmtdelaystep;
     @media screen and (max-width: 768px) {
         font-size: 1.6rem;
     }
@@ -67,8 +68,8 @@ h3 {
 
 .btn-group {
     opacity: 0;
-    animation: content 1s forwards;
-    animation-delay: 1s;
+    animation: content $elmtduration forwards;
+    animation-delay: $elmtdelay + $elmtdelaystep + $elmtdelaystep;
 }
 
 small {
@@ -87,8 +88,8 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    //animation: appear 3s forwards;
-    //opacity: 0;
+    animation: appear $wrapperduration forwards;
+    opacity: 0;
 }
 
 .main {
