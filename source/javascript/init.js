@@ -57,17 +57,19 @@
     function moveBg() {
         var backgroundImage = document.querySelector(".bg img");
 
-        var moveTimer;
-        document.body.onmousemove = function(e){
-            clearTimeout(moveTimer);
-            moveTimer = setTimeout(function() {
-                var pageX = e.pageX - (window.innerWidth / 2);
-                var pageY = e.pageY - (window.innerHeight / 2);
-                var newX = roundToTwo(-5 * pageX / window.innerWidth);
-                var newY = roundToTwo(-5 * pageY / window.innerHeight);
-                backgroundImage.style.transform = "translate3d("+newX+"px,"+newY+"px,0)";
-            }, 10);
-        };
+        if (backgroundImage) {
+            var moveTimer;
+            document.body.onmousemove = function(e){
+                clearTimeout(moveTimer);
+                moveTimer = setTimeout(function() {
+                    var pageX = e.pageX - (window.innerWidth / 2);
+                    var pageY = e.pageY - (window.innerHeight / 2);
+                    var newX = roundToTwo(-5 * pageX / window.innerWidth);
+                    var newY = roundToTwo(-5 * pageY / window.innerHeight);
+                    backgroundImage.style.transform = "translate3d("+newX+"px,"+newY+"px,0)";
+                }, 10);
+            };
+        }
     }
 
     window.onorientationchange = function() {
@@ -79,8 +81,8 @@
     };
 
     window.onload = function() {
-        document.body.className = "";
+        //document.body.className = "";
         showModal();
-        moveBg();
+        //moveBg();
     };
 })();

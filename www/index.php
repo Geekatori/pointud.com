@@ -54,20 +54,20 @@ $config->load('./config/config.php');
         <form enctype="application/x-www-form-urlencoded" id="contact-form" class="modal modal--contact form-horizontal" method="post" tabindex="-1">
             <div class="container">
                 <div class="form-group" id="name-field">
-                    <input type="text" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
                     <label for="form-name"><span><?php echo $config->get('fields.name'); ?></span></label>
+                    <input type="text" class="form-control" id="form-name" name="form-name" placeholder="<?php echo $config->get('fields.name'); ?>" required>
                 </div>
                 <div class="form-group" id="email-field">
-                    <input type="email" class="form-control" id="form-email" name="form-email" placeholder="<?php echo $config->get('fields.email'); ?>" required>
                     <label for="form-email"><span><?php echo $config->get('fields.email'); ?></span></label>
+                    <input type="email" class="form-control" id="form-email" name="form-email" placeholder="<?php echo $config->get('fields.email'); ?>" required>
                 </div>
                 <div class="form-group" id="subject-field">
-                    <input type="text" class="form-control" id="form-subject" name="form-subject" placeholder="<?php echo $config->get('fields.subject'); ?>" required>
                     <label for="form-subject"><span><?php echo $config->get('fields.subject'); ?></span></label>
+                    <input type="text" class="form-control" id="form-subject" name="form-subject" placeholder="<?php echo $config->get('fields.subject'); ?>" required>
                 </div>
                 <div class="form-group" id="message-field">
-                    <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder="<?php echo $config->get('fields.message'); ?>" required></textarea>
                     <label for="form-message"><span><?php echo $config->get('fields.message'); ?></span></label>
+                    <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder="<?php echo $config->get('fields.message'); ?>" required></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-default"><?php echo $config->get('fields.btn-send'); ?></button>
