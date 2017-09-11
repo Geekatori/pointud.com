@@ -29,6 +29,7 @@ const minifycss        = require('gulp-cssnano');
 // Configs
 const jsEntries = [
     `${SRCJAVASCRIPTS}/contact-form.js`,
+    `${NODE_MODULE_PATH}/typed.js/lib/typed.js`,
     `${NODE_MODULE_PATH}/float-labels.js/dist/float-labels.min.js`,
     `${SRCJAVASCRIPTS}/init.js`
 ];

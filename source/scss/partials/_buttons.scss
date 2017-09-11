@@ -1,18 +1,10 @@
 .btn {
-    font-size: 1.5rem;
-    font-weight: $btn-font-weight;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1.42857143;
-    display: inline-block;
-    margin-bottom: 0;
-    padding: $btn-padding-y $btn-padding-x;
     cursor: pointer;
     user-select: none;
     backface-visibility: hidden;
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
-    background-image: none;
     touch-action: manipulation;
 }
 
@@ -20,61 +12,5 @@
     z-index: 1;
     position: relative;
     overflow: hidden;
-    border-width: 0;
-    border-color: transparent;
-    border-radius: 0;
-    &::before,
-    &::after {
-        z-index: -1;
-        position: absolute;
-        content: '';
-        border-radius: inherit;
-    }
-    &::before {
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transition: transform .2s;
-        transform: translate3d(0, 100%, 0);
-    }
-    &::after {
-        top: 1px;
-        right: 1px;
-        bottom: 1px;
-        left: 1px;
-    }
-    &:hover,
-    &:focus {
-        text-decoration: none;
-        &::before {
-            transform: translate3d(0, 0, 0);
-        }
-    }
-}
-
-.btn-link {
-    font-size: 1.6vw;
-    display: inline-block;
-    text-decoration: none;
-    @media screen and (max-width: 768px) {
-        font-size: $font-size-sm;
-    }
-    &::after {
-        display: block;
-        width: 100%;
-        margin-top: 4px;
-        content: '';
-        transition: transform .3s, opacity .3s;
-        border-bottom: 1px solid rgba($border-color, .5);
-    }
-    &:hover,
-    &:focus {
-        text-decoration: none;
-        &::after {
-            transition: transform .1s, opacity .1s;
-            transform: translate3d(0, 2rem, 0);
-            opacity: 0;
-        }
-    }
+    background-color: transparent;
 }

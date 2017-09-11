@@ -1,4 +1,4 @@
-/* global FloatLabels */
+/* global FloatLabels Typed */
 (function() {
     "use strict";
 
@@ -71,6 +71,14 @@
             };
         }
     }
+
+    // Type
+    var options = {
+        strings: [".body {color: white;}"],
+        typeSpeed: 40
+    }
+
+    var typed = new Typed("#code", options);
 
     window.onorientationchange = function() {
         document.body.scrollTop = 0;

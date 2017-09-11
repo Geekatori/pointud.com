@@ -5,17 +5,21 @@
 .fl-input,
 .fl-select,
 .fl-textarea {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: $font-size-sm;
     width: 100%;
     margin-bottom: 2rem;
-    padding: 12px;
-    transition: all .2s ease-in-out;
-    border-width: 0 0 1px;
+    padding: .8em;
+    transition: all .3s;
+    color: $body-color;
+    border-width: 1px;
     border-style: solid;
     border-color: transparent transparent $border-color;
     outline: 0;
     background-color: transparent;
+    display: block;
+    //@media screen and (max-width: 768px) {
+    //    font-size: 1.7rem;
+    //}
     &:valid {
         border-bottom-color: $valid;
     }
@@ -23,16 +27,17 @@
         color: $body-color;
     }
     .fl-is-active & {
-        padding: 18px 12px 6px;
         color: $body-color;
-        border-color: $border-color;
+        border-bottom-color: $border-color;
         background-color: transparent;
     }
     .fl-has-focus & {
+        border-width: 1px;
         border-color: $border-color;
         background-color: transparent;
     }
 }
+
 .fl-select {
     position: relative;
     height: 50px;
@@ -41,6 +46,7 @@
 
     appearance: none;
 }
+
 .fl-label {
     font-size: 12px;
     font-weight: 400;
@@ -66,17 +72,6 @@
 
 .form-group {
     width: 100%;
-}
-
-.form-control {
-    display: block;
-    transition: font-size .3s;
-    //&:invalid {
-    //    border-bottom-color: red;
-    //}
-    @media screen and (max-width: 768px) {
-        font-size: 1.7rem;
-    }
 }
 
 .required {
