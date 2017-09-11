@@ -21,7 +21,7 @@ $config->load('./config/config.php');
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Fira+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="loading">
+<body>
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-4127539-8', 'auto');ga('send', 'pageview');</script>
     <noscript>Veuillez activer JavaScript pour profiter de toutes les fonctionnalités !</noscript>
     <div class="wrapper">
