@@ -25,9 +25,6 @@ $config->load('./config/config.php');
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-4127539-8', 'auto');ga('send', 'pageview');</script>
     <noscript>Veuillez activer JavaScript pour profiter de toutes les fonctionnalités !</noscript>
     <div class="wrapper">
-        <div class="bg">
-            <img src="images/sublime-text-1920.jpg" srcset="images/sublime-text-768.jpg 768w, images/sublime-text-992.jpg 992w, images/sublime-text-1200.jpg 1200w, images/sublime-text-1920.jpg 1920w" sizes="100vw" alt="Sublime Text 3 développeur web">
-        </div>
         <div class="main">
             <div class="content" itemscope itemtype="http://schema.org/Person">
                 <h1 itemprop="name">Mathieu Pointud</h1>
