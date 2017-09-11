@@ -1,5 +1,5 @@
 .fl-wrap {
-    position: relative
+    position: relative;
 }
 
 .fl-input,
@@ -9,13 +9,13 @@
     line-height: 1.5;
     width: 100%;
     margin-bottom: 2rem;
+    padding: 12px;
     transition: all .2s ease-in-out;
     border-width: 0 0 1px;
-    border-color: transparent transparent $border-color;
     border-style: solid;
+    border-color: transparent transparent $border-color;
     outline: 0;
     background-color: transparent;
-    padding: 12px;
     &:valid {
         border-bottom-color: $valid;
     }
@@ -23,10 +23,10 @@
         color: $body-color;
     }
     .fl-is-active & {
+        padding: 18px 12px 6px;
         color: $body-color;
         border-color: $border-color;
         background-color: transparent;
-        padding: 18px 12px 6px;
     }
     .fl-has-focus & {
         border-color: $border-color;
@@ -35,10 +35,11 @@
 }
 .fl-select {
     position: relative;
+    height: 50px;
     cursor: pointer;
     color: $body-color;
+
     appearance: none;
-    height: 50px;
 }
 .fl-label {
     font-size: 12px;
@@ -46,14 +47,14 @@
     line-height: 1;
     z-index: 1;
     position: absolute;
+    top: 1px;
+    left: 10px;
     display: block;
     visibility: hidden;
+    padding: 6px 3px 3px;
     transition: all .2s;
     opacity: 0;
     color: $body-color;
-    top: 1px;
-    left: 10px;
-    padding: 6px 3px 3px;
     .fl-is-active & {
         visibility: visible;
         opacity: 1;
