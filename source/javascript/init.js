@@ -74,12 +74,26 @@
 
     // Type
     var options = {
-        strings: [".body {color: white;}"],
+        strings: ["body {background-color: gray}"],
         typeSpeed: 40
     }
 
     var typed = new Typed("#code", options);
 
+
+
+    function typeAndStyle() {
+        var styleEl = document.createElement('style');
+        var css = 'body { background-color: gray }';
+
+        document.head.appendChild(styleEl);
+
+        console.log(styleEl.sheet);
+
+        styleEl.sheet.insertRule(css, styleEl.sheet.cssRules.length);
+
+    }
+    
     window.onorientationchange = function() {
         document.body.scrollTop = 0;
     };
@@ -91,5 +105,6 @@
     window.onload = function() {
         showModal();
         moveBg();
+        typeAndStyle();
     };
 })();
