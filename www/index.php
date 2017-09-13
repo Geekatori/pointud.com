@@ -73,7 +73,13 @@ $config->load('./config/config.php');
             <small class="required">Tous les champs sont requis.</small>
             <a href="#" class="close" title="Fermer" id="closeForm" aria-label="Fermer">&times;</a>
         </form>
-    </div>  
+    </div>
+    <div class="terminal">
+        <div class="terminal-topbar"></div>
+        <ul class="terminal-shell">
+            <li id="code"></li>
+        </ul>
+    </div>
     <script src="js/main.build.js"></script>
     <script type="text/javascript">new ContactForm('#contact-form', {endpoint: './process.php'});</script>
     <!-- Le code source de ce site est disponible sur https://github.com/geekatori/pointud.com -->
