@@ -4,8 +4,6 @@ html {
 
 body {
     font-size: $font-size-base;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     overflow: hidden;
     color: $body-color;
     @media screen and (max-width: 768px) {
@@ -19,11 +17,12 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: $body-color;
+    text-decoration: $link-decoration;
+    color: $link-color;
     &:hover,
     &:focus {
-        color: $body-color;
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
     }
 }
 
@@ -33,6 +32,7 @@ h3 {
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
     line-height: $headings-line-height;
+    margin-top: 0;
     margin-bottom: $headings-margin-bottom;
     color: $headings-color;
 }
@@ -77,9 +77,15 @@ small {
     font-weight: $font-weight-normal;
 }
 
+figure {
+    margin: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
+    border-style: none;
+    vertical-align: middle;
 }
 
 .wrapper {
@@ -168,11 +174,4 @@ img {
     cursor: default;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
-
-    h1 {
-    }
-    h2 {
-    }
-    .btn-group {
-    }
 }

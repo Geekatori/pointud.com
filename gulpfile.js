@@ -25,6 +25,7 @@ const sourcemaps       = require('gulp-sourcemaps');
 const uglify           = require('gulp-uglify');
 const sass             = require('gulp-sass');
 const minifycss        = require('gulp-cssnano');
+const critical         = require('critical').stream;
 
 // Configs
 const jsEntries = [
@@ -74,6 +75,15 @@ const sassConfig = {
     errLogToConsole: true
 }
 
+const criticalConfig = {
+    base: `${DSTBASE}`, 
+    inline: true,
+    minify: true,
+    width: 1366,
+    height: 768,
+    css: [`${DSTSTYLES}/styles.css`]
+}
+
 // Tasks
 gulp.task('build-img', () => {
     return gulp.src(`${SRCIMAGES}/**/*`)
@@ -100,10 +110,17 @@ gulp.task('build-scss', () => {
         .pipe(gulp.dest(DSTSTYLES));
 });
 
+gulp.task('build-critical', () => {
+    return gulp.src(`${SRCBASE}/index.html`)
+        .pipe(critical(criticalConfig))
+        .pipe(gulp.dest(`${DSTBASE}`));
+});
+
 gulp.task('build-all', [
     'build-scss',
     'build-img',
-    'build-js'
+    'build-js',
+    'build-critical'
 ]);
 
 gulp.task('watch', function() {
