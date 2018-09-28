@@ -3,6 +3,12 @@ $black:                   #000;
 $grey:                    #2c2d26;
 $green:                   #317d31;
 
+$pink:                    #ff71ce;
+$blue:                    #01cdfe;
+$green:                   #05ffa1;
+$purple:                  #b967ff;
+$yellow:                  #fffb96;
+
 $valid:                   $green;
 
 // Animations
@@ -34,14 +40,14 @@ $link-hover-decoration:   none;
 $border-color:            $white;
 $border-radius:           0;
 // Fonts
-$font-family-sans-serif:  "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif:  TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
 $font-size-base:          2rem;
 $font-size-lg:            3rem;
 $font-size-sm:            1.7rem;
 $font-size-xs:            1.2rem;
 $font-weight-base:        400;
 $line-height-base:        1.42;
-$h1-font-size:            6vw;
+$h1-font-size:            12vw;
 $h2-font-size:            2.1vw;
 $h3-font-size:            $font-size-base;
 $headings-margin-bottom:  1rem;

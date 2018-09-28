@@ -40,10 +40,45 @@ h3 {
 h1 {
     font-size: $h1-font-size;
     order: -1;
-    letter-spacing: -.035em;
-    opacity: 0;
-    animation: content $elmtduration forwards;
-    animation-delay: $elmtdelay;
+    //letter-spacing: -.035em;
+    font-family: monoton;
+    color: rgba($white, 0);
+    text-shadow: 0em 0em 3em $blue,
+                 0em 0em 2em $blue,
+                 1px 1px 5px $blue,
+                 0px 0px 15px $blue,
+                 0px 0px 120px $blue,
+                 1px 0px 0px white,
+                -1px 0px 2px rgba(0, 0, 0, .5);
+    //opacity: 0;
+    //animation: content $elmtduration forwards;
+    //animation-delay: $elmtdelay;
+    > span {
+        font-family: neon;
+        transform: rotate(-5deg) translate3d(0, 80px, 0) skew(-7deg);
+        display: inline-block;
+        letter-spacing: -1px;
+        font-size: 18vw;
+        color: $pink;
+        text-shadow: 0em 0em 5em $pink,
+                     0em 0em 3em $pink,
+                     0em 0em 2em $pink,
+                     1px 1px 5px $pink,
+                     0px 0px 10px $pink,
+                     0px 0px 25px $pink,
+                     0px 0px 45px $pink,
+                     2px 1px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+        &:hover span {       
+            color: rgba($white, 0);
+            text-shadow: 0em 0em 3em $pink,
+                         0em 0em 2em $pink,
+                         1px 1px 5px $pink,
+                         0px 0px 15px $pink,
+                         1px 0px 0px white,
+                        -1px 0px 2px rgba(0, 0, 0, .5);
+        }
+    }
     @media screen and (max-width: 768px) {
         font-size: 3.6rem;
     }
@@ -51,10 +86,11 @@ h1 {
 
 h2 {
     font-size: $h2-font-size;
+    font-family: Times New Roman;
     margin-bottom: 2.7vw;
-    opacity: 0;
-    animation: content $elmtduration forwards;
-    animation-delay: $elmtdelay + $elmtdelaystep;
+    //opacity: 0;
+    //animation: content $elmtduration forwards;
+    //animation-delay: $elmtdelay + $elmtdelaystep;
     @media screen and (max-width: 768px) {
         font-size: 1.6rem;
     }
@@ -67,9 +103,9 @@ h3 {
 }
 
 .btn-group {
-    opacity: 0;
-    animation: content $elmtduration forwards;
-    animation-delay: $elmtdelay + $elmtdelaystep + $elmtdelaystep;
+    //opacity: 0;
+    //animation: content $elmtduration forwards;
+    //animation-delay: $elmtdelay + $elmtdelaystep + $elmtdelaystep;
 }
 
 small {
@@ -99,7 +135,6 @@ img {
 }
 
 .main {
-    border: .75vw solid $border-color;
     position: fixed;
     top: 0;
     left: 0;
@@ -116,14 +151,14 @@ img {
     width: 100%;
     height: 100%;
     transition: opacity .3s, transform .3s;
-    transform: rotateX(0deg) rotateY(360deg) rotateZ(356.6deg) scale(1.2);
+    //transform: rotateX(0deg) rotateY(360deg) rotateZ(356.6deg) scale(1.2);
     backface-visibility: hidden;
-    opacity: .55;
     background-color: $body-bg;
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center top;
     }
 }
 

@@ -81,6 +81,6 @@
     window.onload = function() {
         document.body.className = "";
         showModal();
-        moveBg();
+        //moveBg();
     };
 })();
