@@ -7,13 +7,63 @@
     }
 }
 
-@keyframes content {
+@keyframes neon {
     0% {
-        transform: translate3d(0, 2rem, 0);
-        opacity: 0;
+        color: $pink;
+        text-shadow: 0em 0em 5em $pink,
+                     0em 0em 3em $pink,
+                     0em 0em 2em $pink,
+                     1px 1px 5px $pink,
+                     0px 0px 10px $pink,
+                     0px 0px 25px $pink,
+                     2px 1px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+    }
+    20% {
+        color: rgba($white, 0);
+        text-shadow: 0em 0em 3em $pink,
+                     0em 0em 2em $pink,
+                     1px 1px 5px $pink,
+                     0px 0px 15px $pink,
+                     1px 0px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
     }
     100% {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
+        color: rgba($white, 0);
+        text-shadow: 0em 0em 3em $pink,
+                     0em 0em 2em $pink,
+                     1px 1px 5px $pink,
+                     0px 0px 15px $pink,
+                     1px 0px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+    }
+    100% {
+        color: rgba($white, 0);
+        text-shadow: 0em 0em 3em $pink,
+                     0em 0em 2em $pink,
+                     1px 1px 5px $pink,
+                     0px 0px 15px $pink,
+                     1px 0px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+    }
+    100% {
+        color: rgba($white, 0);
+        text-shadow: 0em 0em 3em $pink,
+                     0em 0em 2em $pink,
+                     1px 1px 5px $pink,
+                     0px 0px 15px $pink,
+                     1px 0px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+    }
+}
+
+@keyframes blink {
+    from {
+        background-color: $body-color;
+        color: $body-bg;
+    }
+    to {
+        background-color: transparent;
+        color: $body-color;
     }
 }

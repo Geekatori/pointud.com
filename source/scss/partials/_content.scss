@@ -6,6 +6,7 @@ body {
     font-size: $font-size-base;
     overflow: hidden;
     color: $body-color;
+    text-transform: uppercase;
     @media screen and (max-width: 768px) {
         font-size: $font-size-sm;
     }
@@ -39,11 +40,34 @@ h3 {
 
 h1 {
     font-size: $h1-font-size;
-    order: -1;
-    letter-spacing: -.035em;
-    opacity: 0;
-    animation: content $elmtduration forwards;
-    animation-delay: $elmtdelay;
+    line-height: 1;
+    font-family: monoton;
+    color: rgba($white, 0);
+    text-shadow: 0em 0em 3em $blue,
+                 0em 0em 2em $blue,
+                 1px 1px 5px $blue,
+                 0px 0px 15px $blue,
+                 1px 0px 0px white,
+                -1px 0px 2px rgba(0, 0, 0, .5);
+    > span {
+        font-family: neon;
+        transform: rotate(-5deg) translate3d(0, 5vw, 0) skew(-7deg);
+        display: block;
+        letter-spacing: -1px;
+        font-size: 1.6em;
+        color: $pink;
+        text-shadow: 0em 0em 5em $pink,
+                     0em 0em 3em $pink,
+                     0em 0em 2em $pink,
+                     1px 1px 5px $pink,
+                     0px 0px 10px $pink,
+                     0px 0px 25px $pink,
+                     2px 1px 0px white,
+                    -1px 0px 2px rgba(0, 0, 0, .5);
+        span {
+            animation: neon 3s infinite step-end;
+        }
+    }
     @media screen and (max-width: 768px) {
         font-size: 3.6rem;
     }
@@ -51,10 +75,9 @@ h1 {
 
 h2 {
     font-size: $h2-font-size;
+    font-family: vcr;
     margin-bottom: 2.7vw;
-    opacity: 0;
-    animation: content $elmtduration forwards;
-    animation-delay: $elmtdelay + $elmtdelaystep;
+    text-transform: uppercase;
     @media screen and (max-width: 768px) {
         font-size: 1.6rem;
     }
@@ -62,14 +85,9 @@ h2 {
 
 h3 {
     font-size: $h3-font-size;
+    font-family: $font-family-sans-serif;
     display: inline;
     margin-bottom: 0;
-}
-
-.btn-group {
-    opacity: 0;
-    animation: content $elmtduration forwards;
-    animation-delay: $elmtdelay + $elmtdelaystep + $elmtdelaystep;
 }
 
 small {
@@ -99,7 +117,6 @@ img {
 }
 
 .main {
-    border: .75vw solid $border-color;
     position: fixed;
     top: 0;
     left: 0;
@@ -107,24 +124,7 @@ img {
     height: 100%;
     transition: opacity .3s;
     text-align: center;
-}
-
-.bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity .3s, transform .3s;
-    transform: rotateX(0deg) rotateY(360deg) rotateZ(356.6deg) scale(1.2);
-    backface-visibility: hidden;
-    opacity: .55;
-    background-color: $body-bg;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    z-index: 1;
 }
 
 .container {
@@ -160,12 +160,17 @@ img {
         flex: 0 0 75%;
         max-width: 75%;
     }
+
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 90%;
     height: 100%;
@@ -174,4 +179,7 @@ img {
     cursor: default;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
+    opacity: 0;
+    animation: appear $wrapperduration forwards;
+    animation-delay: 1s;
 }

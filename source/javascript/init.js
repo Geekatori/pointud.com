@@ -54,6 +54,7 @@
     }
 
     // Move background
+    /*
     function moveBg() {
         var backgroundImage = document.querySelector(".bg img");
 
@@ -69,6 +70,7 @@
             }, 10);
         };
     }
+    */
 
     window.onorientationchange = function() {
         document.body.scrollTop = 0;
@@ -81,6 +83,6 @@
     window.onload = function() {
         document.body.className = "";
         showModal();
-        moveBg();
+        //moveBg();
     };
 })();
