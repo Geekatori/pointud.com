@@ -6,9 +6,6 @@
     color: $body-color;
     display: block;
     transition: font-size .3s;
-    //&:invalid {
-    //    border-bottom-color: red;
-    //}
     @media screen and (max-width: 768px) {
         font-size: 1.7rem;
     }
