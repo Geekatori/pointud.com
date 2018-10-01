@@ -1,4 +1,4 @@
-/* global FloatLabels Typed */
+/* global FloatLabels */
 (function() {
     "use strict";
 
@@ -54,46 +54,24 @@
     }
 
     // Move background
+    /*
     function moveBg() {
         var backgroundImage = document.querySelector(".bg img");
 
-        if (backgroundImage) {
-            var moveTimer;
-            document.body.onmousemove = function(e){
-                clearTimeout(moveTimer);
-                moveTimer = setTimeout(function() {
-                    var pageX = e.pageX - (window.innerWidth / 2);
-                    var pageY = e.pageY - (window.innerHeight / 2);
-                    var newX = roundToTwo(-5 * pageX / window.innerWidth);
-                    var newY = roundToTwo(-5 * pageY / window.innerHeight);
-                    backgroundImage.style.transform = "translate3d("+newX+"px,"+newY+"px,0)";
-                }, 10);
-            };
-        }
+        var moveTimer;
+        document.body.onmousemove = function(e){
+            clearTimeout(moveTimer);
+            moveTimer = setTimeout(function() {
+                var pageX = e.pageX - (window.innerWidth / 2);
+                var pageY = e.pageY - (window.innerHeight / 2);
+                var newX = roundToTwo(-5 * pageX / window.innerWidth);
+                var newY = roundToTwo(-5 * pageY / window.innerHeight);
+                backgroundImage.style.transform = "translate3d("+newX+"px,"+newY+"px,0)";
+            }, 10);
+        };
     }
+    */
 
-    // Type
-    var options = {
-        strings: ["body {background-color: gray}"],
-        typeSpeed: 40
-    }
-
-    var typed = new Typed("#code", options);
-
-
-
-    function typeAndStyle() {
-        var styleEl = document.createElement('style');
-        var css = 'body { background-color: gray }';
-
-        document.head.appendChild(styleEl);
-
-        console.log(styleEl.sheet);
-
-        styleEl.sheet.insertRule(css, styleEl.sheet.cssRules.length);
-
-    }
-    
     window.onorientationchange = function() {
         document.body.scrollTop = 0;
     };
@@ -103,8 +81,8 @@
     };
 
     window.onload = function() {
+        document.body.className = "";
         showModal();
-        moveBg();
-        typeAndStyle();
+        //moveBg();
     };
 })();

@@ -3,6 +3,12 @@ $black:                   #000;
 $grey:                    #2c2d26;
 $green:                   #317d31;
 
+$pink:                    #ff71ce;
+$blue:                    #01cdfe;
+$green:                   #05ffa1;
+$purple:                  #b967ff;
+$yellow:                  #fffb96;
+
 $valid:                   $green;
 
 // Animations
@@ -12,27 +18,69 @@ $elmtduration:            1s;
 $elmtdelay:               1s;
 $elmtdelaystep:           .5s;
 
+// Bootstrap
+//
+// Colors
+$theme-colors: (
+  primary: $white
+);
+// Options
+$enable-rounded:          false;
+$enable-shadows:          false;
+$enable-print-styles:     false;
 // Body
 $body-bg:                 $grey;
 $body-color:              $white;
+// Links
+$link-color:              $body-color;
+$link-decoration:         none;
+$link-hover-color:        $body-color;
+$link-hover-decoration:   none;
 // Components
 $border-color:            $white;
+$border-radius:           0;
 // Fonts
-$font-family-sans-serif:  'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif:  vcr, TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
 $font-size-base:          2rem;
-$font-size-sm:            1.7rem;
-$font-weight-base:        300;
-$line-height-base:        1.2;
-$h1-font-size:            7vw;
-$h2-font-size:            3.8vw;
+$font-size-lg:            3rem;
+$font-size-sm:            1.6rem;
+$font-size-xs:            1.2rem;
+$font-weight-base:        400;
+$line-height-base:        1.42;
+$h1-font-size:            80px;
+$h2-font-size:            30px;
 $h3-font-size:            $font-size-base;
 $headings-margin-bottom:  1rem;
-$headings-font-family:    'Fira Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+//$headings-font-family:    'Fira Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family:    $font-family-sans-serif;
 $headings-font-weight:    300;
-$headings-line-height:    1.1;
 $headings-color:          $body-color;
-$small-font-size:         80%;
 // Buttons
 $btn-padding-x:           2.5rem;
 $btn-padding-y:           1rem;
 $btn-font-weight:         300;
+
+// Float labels
+$float-labels: (
+    base-height             : 24px,
+    base-padding            : 6px,
+    border-radius           : 0,
+    border-width            : 1px,
+    margin-bottom           : 20px,
+    color-background        : transparent,
+    color-background-active : transparent,
+    color-background-focus  : transparent,
+    color-border            : $border-color,
+    color-border-active     : $border-color,
+    color-border-focus      : $border-color,
+    color-placeholder       : $body-color,
+    color-required          : $body-color,
+    color-text              : $body-color,
+    color-text-focus        : $body-color,
+    line-height             : 1.5,
+    font-size               : 20px,
+    font-size-small         : 12px,
+    font-weight             : 400,
+    transition-easing       : ease-in-out,
+    transition-speed        : 0.2s
+);

@@ -18,31 +18,26 @@ $config->load('./config/config.php');
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="Mathieu Pointud - Intégrateur Web HTML CSS à Clermont-Ferrand, Puy-de-Dôme 63, Auvergne" />
     <meta name="keywords" content="Intégrateur HTML, Développeur Front-end" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Fira+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body class="loading">
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-4127539-8', 'auto');ga('send', 'pageview');</script>
     <noscript>Veuillez activer JavaScript pour profiter de toutes les fonctionnalités !</noscript>
     <div class="wrapper">
         <div class="main">
             <div class="content" itemscope itemtype="http://schema.org/Person">
-                <h1 itemprop="name">Mathieu Pointud</h1>
+                <h1 itemprop="name"><span>Math<span>i</span>eu</span>Pointud</h1>
                 <h2><span itemprop="jobTitle">Intégrateur HTML - Développeur front-end</span><br><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Clermont-Ferrand</span></span></h2>
-                <div class="btn-group"><a href="#" title="À propos" class="btn btn-link" id="showAbout" role="button">À propos</a><a href="#" title="Me contacter" class="btn btn-link" id="showForm" role="button">Me contacter</a></div>
+                <div class="btn-group"><a href="#" title="Lire les détails" class="btn btn-link" id="showAbout" role="button"><span>></span> À propos</a><a href="#" title="Formulaire de contact" class="btn btn-link" id="showForm" role="button"><span>></span> Me contacter</a></div>
             </div>
         </div>
+        <div class="grid"></div>
         <div class="modal modal--about" tabindex="-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="images/mathieu-pointud-320.jpg" alt="Mathieu Pointud">
-                    </div>
-                    <div class="col-sm-9">
+                    <div class="col-sm-12">
                         Je suis <h3>Intégrateur HTML CSS JS</h3> avec 10 ans d'expérience et je travaille en agence depuis 7 ans. Je travaille sur des projets pour de l'événementiel, grands-comptes, e-commerces ou institutionnels. J'ai un grand soucis du détail pour construire des sites durables, maintenables, responsives, accessibles et optimisés SEO. J'utilise quotidiennement <h3>SASS</h3>, <h3>JavaScript</h3> / <h3>jQuery</h3> et <h3>Gulp</h3>.
-                        <br>
-                        J'ai aussi une passion pour le vélo.
-                        <a href="pdf/cv-mathieu-pointud.pdf" title="Télécharger le CV de Mathieu Pointud" class="btn btn-default" id="download-resume" role="button">Télécharger mon CV</a>
+                        <a href="pdf/cv-mathieu-pointud.pdf" title="Télécharger le CV de Mathieu Pointud" class="btn btn-link" id="download-resume" role="button"><span>></span> Télécharger mon CV</a>
                     </div>
                 </div>
             </div>
@@ -67,19 +62,17 @@ $config->load('./config/config.php');
                     <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder="<?php echo $config->get('fields.message'); ?>" required></textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-default"><?php echo $config->get('fields.btn-send'); ?></button>
+                    <button type="submit" class="btn btn-link"><span>></span> <?php echo $config->get('fields.btn-send'); ?></button>
                 </div>
             </div>
             <small class="required">Tous les champs sont requis.</small>
             <a href="#" class="close" title="Fermer" id="closeForm" aria-label="Fermer">&times;</a>
         </form>
-    </div>
-    <div class="terminal">
-        <div class="terminal-topbar"></div>
-        <ul class="terminal-shell">
-            <li id="code"></li>
-        </ul>
-    </div>
+    </div>  
+    <audio autoplay loop>
+        <source src="https://a.tumblr.com/tumblr_oat8zhArMY1u1vzz5o1.mp3" type="audio/mpeg">
+        Arg. Votre navigateur ne prend pas en charge l'audio !
+    </audio>
     <script src="js/main.build.js"></script>
     <script type="text/javascript">new ContactForm('#contact-form', {endpoint: './process.php'});</script>
     <!-- Le code source de ce site est disponible sur https://github.com/geekatori/pointud.com -->

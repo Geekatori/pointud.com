@@ -1,9 +1,12 @@
 // ¯\_(ツ)_/¯ //
 @import 'variables';
-@import '../../node_modules/normalize.css/normalize';
+@import 'bootstrap-components';
+@import 'partials/reboot';
+@import '../../node_modules/float-labels.js/src/float-labels';
+@import 'partials/fonts';
+@import 'partials/animations';
 @import 'partials/modal';
 @import 'partials/form';
 @import 'partials/buttons';
 @import 'partials/content';
-@import 'partials/styling';
-@import 'partials/terminal';
+@import 'partials/grid';
