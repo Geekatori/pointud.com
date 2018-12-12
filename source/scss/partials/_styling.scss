@@ -1,0 +1,107 @@
+body {
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-base;
+    color: $body-color;
+    background-color: $body-bg;
+}
+
+a {
+    text-decoration: none;
+    color: $body-color;
+    &:hover,
+    &:focus {
+        color: $body-color;
+    }
+}
+
+h1 {
+    font-size: $h1-font-size;
+    letter-spacing: -.035em;
+    //@media screen and (max-width: 768px) {
+    //    font-size: 3.6rem;
+    //}
+}
+
+h2 {
+    font-size: $h2-font-size;
+    margin-bottom: 2.7vw;
+    //@media screen and (max-width: 768px) {
+    //    font-size: 1.6rem;
+    //}
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    margin-bottom: $headings-margin-bottom;
+    color: $headings-color;
+}
+
+.main {
+    text-align: center;
+    border: .75vw solid $border-color;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn {
+    font-size: 1.5rem;
+    font-weight: $btn-font-weight;
+    display: inline-block;
+    padding: $btn-padding-y $btn-padding-x;
+}
+
+.btn-default {
+    color: $body-color;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $border-color;
+    transition: border-color .3s;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        border-color: transparent;
+    }
+}
+
+.btn-link {
+    font-size: 1.6vw;
+    display: inline-block;
+    text-decoration: none;
+    &::after {
+        display: block;
+        width: 100%;
+        margin-top: 4px;
+        content: '';
+        transition: transform .3s, opacity .3s;
+        border-bottom: 1px solid rgba($border-color, .5);
+    }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        &::after {
+            transition: transform .1s, opacity .1s;
+            transform: translate3d(0, 2rem, 0);
+            opacity: 0;
+        }
+    }
+    //@media screen and (max-width: 768px) {
+    //    font-size: $font-size-sm;
+    //}
+}

@@ -1,0 +1,48 @@
+.terminal {
+    position: fixed;
+    bottom: 1vw;
+    width: 80%;
+    min-width: 320px;
+    margin: 0 10%;
+    border-radius: 3px;
+    box-shadow: 0 0 30px rgba($black, .4);
+}
+
+.terminal-topbar {
+    font-size: .6em;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    color: #525252;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: linear-gradient(to bottom, #f7f7f7 0%, #b8b8b8 100%);
+    text-shadow: 1px 1px 0 rgba($white, .5);
+}
+
+.terminal-shell {
+    font: .7em 'Andale Mono', Consolas, 'Courier New';
+    line-height: 1.6em;
+    margin: 0;
+    padding: 5px 5px 80px;
+    list-style: none;
+    color: #45d40c;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: #141414;
+    li {
+        line-height: 1.2;
+        position: relative;
+        display: inline;
+        padding: 0 0 0 15px;
+        word-wrap: break-word;
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '$';
+        }
+    }
+}
