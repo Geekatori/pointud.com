@@ -69,10 +69,6 @@ $config->load('./config/config.php');
             <a href="#" class="close" title="Fermer" id="closeForm" aria-label="Fermer">&times;</a>
         </form>
     </div>  
-    <audio autoplay loop>
-        <source src="https://a.tumblr.com/tumblr_oat8zhArMY1u1vzz5o1.mp3" type="audio/mpeg">
-        Arg. Votre navigateur ne prend pas en charge l'audio !
-    </audio>
     <script src="js/main.build.js"></script>
     <script type="text/javascript">new ContactForm('#contact-form', {endpoint: './process.php'});</script>
     <!-- Le code source de ce site est disponible sur https://github.com/geekatori/pointud.com -->
