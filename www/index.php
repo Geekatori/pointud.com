@@ -27,23 +27,23 @@ $config->load('./config/config.php');
         <div class="main">
             <div class="content" itemscope itemtype="http://schema.org/Person">
                 <h1 itemprop="name"><span>Math<span>i</span>eu</span>Pointud</h1>
-                <h2><span itemprop="jobTitle">Intégrateur HTML - Développeur front-end</span><br><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Clermont-Ferrand</span></span></h2>
-                <div class="btn-group"><a href="#" title="Lire les détails" class="btn btn-link" id="showAbout" role="button"><span>></span> À propos</a><a href="#" title="Formulaire de contact" class="btn btn-link" id="showForm" role="button"><span>></span> Me contacter</a></div>
+                <h2><span itemprop="jobTitle">Intégrateur&nbsp;HTML <strong>-</strong> Développeur&nbsp;front-end</span><br><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Clermont-Ferrand</span></span></h2>
+                <div class="btn-group"><a href="#" title="Lire les détails" class="btn btn-link" id="showAbout" role="button"><span>&gt;</span> À propos</a><a href="#" title="Formulaire de contact" class="btn btn-link" id="showForm" role="button"><span>&gt;</span> Me contacter</a></div>
             </div>
         </div>
         <div class="grid"></div>
-        <div class="modal modal--about" tabindex="-1">
+        <div class="modal modal--about" tabindex="-1" role="dialog">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        Je suis <h3>Intégrateur HTML CSS JS</h3> avec 10 ans d'expérience et je travaille en agence depuis 7 ans. Je travaille sur des projets pour de l'événementiel, grands-comptes, e-commerces ou institutionnels. J'ai un grand soucis du détail pour construire des sites durables, maintenables, responsives, accessibles et optimisés SEO. J'utilise quotidiennement <h3>SASS</h3>, <h3>JavaScript</h3> / <h3>jQuery</h3> et <h3>Gulp</h3>.
-                        <a href="pdf/cv-mathieu-pointud.pdf" title="Télécharger le CV de Mathieu Pointud" class="btn btn-link" id="download-resume" role="button"><span>></span> Télécharger mon CV</a>
+                        Je suis <h3>Intégrateur HTML CSS JS</h3> avec 11 ans d'expérience et je travaille en agence depuis 8 ans. Je travaille sur des projets pour de l'événementiel, grands-comptes, e-commerces ou institutionnels. J'ai un grand soucis du détail pour construire des sites maintenables, responsives, accessibles et optimisés SEO. J'utilise quotidiennement <h3>SASS</h3>, <h3>JavaScript</h3> / <h3>jQuery</h3> et <h3>Gulp</h3>.
+                        <a href="pdf/cv-mathieu-pointud.pdf" title="Télécharger le CV de Mathieu Pointud" class="btn btn-link" id="download-resume" role="button"><span>&gt;</span> Télécharger mon CV</a>
                     </div>
                 </div>
             </div>
             <a href="#" class="close" title="Fermer" aria-label="Fermer">&times;</a>
         </div>
-        <form enctype="application/x-www-form-urlencoded" id="contact-form" class="modal modal--contact form-horizontal" method="post" tabindex="-1">
+        <form enctype="application/x-www-form-urlencoded" id="contact-form" class="modal modal--contact form-horizontal" method="post" tabindex="-1" role="dialog">
             <div class="container">
                 <div class="form-group" id="name-field">
                     <label for="form-name"><span><?php echo $config->get('fields.name'); ?></span></label>
@@ -62,7 +62,7 @@ $config->load('./config/config.php');
                     <textarea class="form-control" rows="6" id="form-message" name="form-message" placeholder="<?php echo $config->get('fields.message'); ?>" required></textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-link"><span>></span> <?php echo $config->get('fields.btn-send'); ?></button>
+                    <button type="submit" class="btn btn-link"><span>&gt;</span> <?php echo $config->get('fields.btn-send'); ?></button>
                 </div>
             </div>
             <small class="required">Tous les champs sont requis.</small>
