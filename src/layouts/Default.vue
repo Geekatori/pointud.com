@@ -85,7 +85,7 @@ query {
     height: 100vh;
     background-image: url(/sublime-text-1920.jpg);
     background-position: 95% top;
-    background-size: 250%;
+    background-size: cover;
   }
   .content {
     padding-left: 10%;
@@ -100,7 +100,7 @@ query {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .1);
+    background: rgba(230, 230, 230, .4);
   }
   h1 {
     font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
@@ -115,7 +115,7 @@ query {
   h2 {
     margin-top: 100px;
     margin-bottom: 0;
-    color: #999;
+    color: #111;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 1.07em;

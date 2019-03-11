@@ -8,4 +8,4 @@ dist
 .env.*
 
 ### PDF ###
-pdf/
+*.pdf
