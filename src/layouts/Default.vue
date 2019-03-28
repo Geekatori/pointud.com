@@ -30,15 +30,49 @@ query {
   }
   body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: .2px;
     line-height: 1.8;
-    color: #777;
+    color: #fff;
     margin: 0;
   }
+  h1 {
+    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 6em;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  h2 {
+    margin-top: 100px;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 3px;
+  }
+  h3 {
+    display: inline;
+    font-size: 18px;
+    font-weight: 300;
+  }
   a {
+    color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 2px 15px;
+  }
+  a:hover,
+  a:focus {
+    color: #111;
+    background-color: #fff;
   }
   .header {
     position: fixed;
@@ -54,11 +88,8 @@ query {
     padding-right: 15px;
   }
   .header__logo__link {
-    color: #ececec;
-    padding: 2px 15px;
+    color: #fff;
     background-color: #111;
-    text-transform: uppercase;
-    letter-spacing: 2px;
   }
   .header__logo__link:hover,
   .header__logo__link:focus {
@@ -70,13 +101,11 @@ query {
   }
   .header__nav__link {
     color: #111;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 2px 15px;
+    background-color: #fff;
   }
   .header__nav__link:hover,
   .header__nav__link:focus {
-    color: #ececec;
+    color: #fff;
     background-color: #111;
   }
   .main {
@@ -84,7 +113,7 @@ query {
     width: 100%;
     height: 100vh;
     background-image: url(/sublime-text-1920.jpg);
-    background-position: 95% top;
+    background-position: left center;
     background-size: cover;
   }
   .content {
@@ -100,26 +129,6 @@ query {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(230, 230, 230, .4);
-  }
-  h1 {
-    font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-    color: #111;
-    text-transform: uppercase;
-    font-size: 6em;
-    line-height: 1.1;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin: 0;
-  }
-  h2 {
-    margin-top: 100px;
-    margin-bottom: 0;
-    color: #111;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 1.07em;
-    line-height: 1.1;
-    letter-spacing: 3px;
+    background: rgba(17, 17, 17, .2);
   }
 </style>

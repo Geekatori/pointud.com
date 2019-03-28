@@ -8,7 +8,6 @@
         </div>
       </div>
     </div>
-    <div class="grid"></div>
   </Layout>
 </template>
 
