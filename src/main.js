@@ -12,12 +12,10 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: '//fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300'
   })
-  //head.link.push({
-  //  rel: 'stylesheet',
-  //  href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
-  //})
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'
+  })
 }
-
-import '~/assets/normalize.css'
 
 import '~/assets/styles.scss'
