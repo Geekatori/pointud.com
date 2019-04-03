@@ -1,0 +1,204 @@
+options:
+  formatter: stylish
+files:
+  include: '**/*.s+(a|c)ss'
+  ignore: 
+    - '**/_icons.scss'
+    - '**/_variables.scss'
+rules:
+  attribute-quotes: 1
+  bem-depth:
+    - 1
+    -
+      max-depth: 4
+  border-zero:
+    - 2
+    - 
+      convention: '0'
+  brace-style:
+    - 2
+    - 
+      style: 'stroustrup'
+  class-name-format:
+    - 1
+    -
+      convention: hyphenatedbem
+      convention-explanation: You must use hyphenated BEM syntax
+  clean-import-paths:
+    - 1
+    -
+      leading-underscore: false
+      filename-extension: false
+  declarations-before-nesting: 2
+  empty-args:
+    - 1
+    -
+      include: true
+  empty-line-between-blocks: 0
+  extends-before-declarations: 2
+  extends-before-mixins: 2
+  final-newline:
+    - 2
+    - 
+      include: true
+  force-attribute-nesting: 0
+  force-element-nesting: 0
+  force-pseudo-nesting: 0
+  function-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  hex-length:
+    - 1
+    -
+      style: short
+  hex-notation:
+    - 2
+    - 
+      style: lowercase
+  id-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      convention: hyphenatedlowercase
+      ignore: ['']
+  indentation:
+    - 2
+    -
+      size: 4
+  leading-zero:
+    - 1
+    -
+      include: false
+  max-file-line-count: 0
+  max-line-length: 0
+  mixin-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  mixins-before-declarations:
+    - 1
+    -
+      exclude: ['media-breakpoint-up', 'media-breakpoint-down', 'breakpoint', 'mq', 'media']
+  nesting-depth:
+    - 1
+    -
+      max-depth: 4
+  no-attribute-selectors: 0
+  no-color-hex: 1
+  no-color-keywords: 2
+  no-color-literals:
+    - 0
+    -
+      allow-map-identifiers: true
+      allow-rgba: true
+      allow-variable-identifiers: true
+  no-combinators: 0
+  no-css-comments: 1
+  no-debug: 2
+  no-disallowed-properties:
+    - 1
+    -
+      'properties':
+        - 
+  no-duplicate-properties: 2
+  no-empty-rulesets: 2
+  no-extends: 0
+  no-ids:  1
+  no-important: 2
+  no-invalid-hex: 2
+  no-mergeable-selectors: 2
+  no-misspelled-properties: 2
+  no-qualifying-elements:
+    - 2
+    - 
+      allow-element-with-attribute: false
+      allow-element-with-class: false
+      allow-element-with-id: false
+  no-trailing-whitespace: 2
+  no-trailing-zero: 2
+  no-transition-all: 1
+  no-universal-selectors: 2
+  no-url-domains: 2
+  no-vendor-prefixes:
+    - 2
+    -
+      ignore-non-standard: true
+      excluded-identifiers:
+        - moz-appearance
+        - webkit-appearance
+        - webkit-font-smoothing
+        - moz-osx-font-smoothing
+  no-warn: 2
+  one-declaration-per-line: 2
+  placeholder-in-extend: 0
+  placeholder-name-format:
+    - 1
+    -
+      convention: hyphenatedbem
+  property-sort-order: 0
+  property-units:
+    - 2
+    -
+      global: ['px', 'rem', 's', '%', 'vh', 'vw', 'deg', 'em']
+  pseudo-element: 2
+  quotes:
+    - 2
+    -
+      style: single
+  shorthand-values: 2
+  single-line-per-selector: 2
+  space-after-bang:
+    - 2 
+    -
+      include: false
+  space-after-colon:
+    - 2
+    -
+      include: true
+  space-after-comma:
+    - 2
+    -
+      include: true
+  space-around-operator:
+    - 2
+    -
+      include: true
+  space-before-bang:
+    - 2
+    -
+      include: true
+  space-before-brace:
+    - 2
+    -
+      include: true
+  space-before-colon:
+    - 2
+    -
+      include: false
+  space-between-parens:
+    - 2
+    -
+      include: false
+  trailing-semicolon:
+    - 2
+    -
+      include: true
+  url-quotes: 2
+  variable-for-property:
+    - 0
+    -
+      properties:
+        - 'color'
+        - 'background-color'
+  variable-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      convention: hyphenatedlowercase
+  zero-unit:
+    - 2
+    -
+      include: false
