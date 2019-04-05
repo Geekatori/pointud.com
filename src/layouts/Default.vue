@@ -5,8 +5,8 @@
         <g-link class="header__logo__link" to="/">POINTUD.COM</g-link>
       </strong>
       <nav class="header__nav">
-        <g-link class="header__nav__link" to="/about">À propos</g-link>
-        <g-link class="header__nav__link" to="/contact">Me contacter</g-link>
+        <g-link class="header__nav__link" to="/a-propos">À propos</g-link>
+        <!-- <g-link class="header__nav__link" to="/contact">Me contacter</g-link> -->
       </nav>
     </header>
     <div class="main">
@@ -26,3 +26,7 @@ query {
   }
 }
 </static-query>
+
+<script>
+  console.log("On peut aussi discuter autour d'un 🍵 ou d'une 🍺 !");
+</script>

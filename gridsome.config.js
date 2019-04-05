@@ -6,5 +6,14 @@
 
 module.exports = {
   siteName: 'pointud.com',
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        index: ['README'],
+        path: 'content/**/*.md',
+        typeName: 'ContentPage'
+      }
+    },
+  ]
 }

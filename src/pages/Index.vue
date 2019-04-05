@@ -10,7 +10,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Intégrateur Web HTML/CSS - Développeur Front End à Clermont-Ferrand'
+    title: 'Intégrateur Web HTML CSS - Développeur Front End à Clermont-Ferrand'
   }
 }
 </script>
