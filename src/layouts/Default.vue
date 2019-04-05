@@ -10,7 +10,7 @@
       </nav>
     </header>
     <div class="main">
-      <g-image src="~/assets/images/sublime-text-1920.jpg" class="bg" />
+      <g-image src="~/assets/images/sublime-text-1920.jpg" class="bg" alt="" />
       <div class="bg-overlay"></div>
       <div class="content">
         <slot/>

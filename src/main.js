@@ -13,15 +13,11 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: '//fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300'
   })
+
   //head.link.push({
   //  rel: 'stylesheet',
   //  href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'
   //})
-
-  head.meta.push({
-    name: 'description',
-    content: 'Mathieu Pointud - Intégrateur Web HTML CSS à Clermont-Ferrand, Puy-de-Dôme 63, Auvergne'
-  })
 
   head.meta.push({
     name: 'keywords',

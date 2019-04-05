@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'pointud.com',
+  siteUrl: 'https://www.pointud.com',
+  siteDescription: 'Mathieu Pointud - Intégrateur Web HTML CSS à Clermont-Ferrand, Puy-de-Dôme 63, Auvergne',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
