@@ -11,7 +11,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   head.link.push({
     rel: 'stylesheet',
-    href: '//fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300'
+    href: '//fonts.googleapis.com/css?family=Montserrat:300,700'
   })
 
   //head.link.push({

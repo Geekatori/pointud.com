@@ -10,12 +10,15 @@ module.exports = {
   siteDescription: 'Mathieu Pointud - Intégrateur Web HTML CSS à Clermont-Ferrand, Puy-de-Dôme 63, Auvergne',
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: '@gridsome/plugin-critical',
       options: {
-        index: ['README'],
-        path: 'content/**/*.md',
-        typeName: 'ContentPage'
+        paths: ['/'],
+        width: 1300,
+        height: 900
       }
     },
+    {
+      use: '@gridsome/plugin-sitemap'
+    }
   ]
 }
