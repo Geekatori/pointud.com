@@ -7,9 +7,9 @@
         <div class="media-body">        
           Je suis <strong>Intégrateur HTML CSS JS</strong> avec 11 ans d'expérience et je travaille en agence web depuis 9 ans. Je travaille sur des projets pour de l'événementiel, grands-comptes, e-commerces ou institutionnels. J'ai un grand soucis du détail pour construire des sites responsives, accessibles et optimisés <strong>SEO</strong>. <br>J'utilise quotidiennement <strong>SASS</strong>, <strong>Javascript</strong> / <strong>jQuery</strong> et <strong>Git</strong>.
           <br><br>
-          <a href="pdf/cv-mathieu-pointud.pdf" title="Télécharger le CV de Mathieu Pointud" class="btn">Télécharger mon CV</a>
+          <a href="pdf/cv-mathieu-pointud.pdf" title="Télécharger le CV de Mathieu Pointud dans une nouvelle fenêtre" class="btn" data-hover="Télécharger mon CV" target="_blank">Télécharger mon CV</a>
           <br><br>
-          <a href="https://www.linkedin.com/in/mathieu-pointud-29986659/" title="Voir mon profil Linkedin" class="btn">Mon profil Linkedin</a>
+          <a href="https://www.linkedin.com/in/mathieu-pointud-29986659/" title="Voir mon profil Linkedin dans une nouvelle fenêtre" class="btn" data-hover="Mon profil Linkedin" target="_blank">Mon profil Linkedin</a>
         </div>
       </div>
     </div>
@@ -55,9 +55,6 @@
         margin-bottom: 30px;
       }
     }
-  }
-  .btn {
-    margin-left: -15px;
   }
 </style>
 
