@@ -19,6 +19,14 @@ module.exports = {
     },
     {
       use: '@gridsome/plugin-sitemap'
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/*.md',
+        typeName: 'BlogPost',
+        route: 'blog/:slug'
+      }
     }
   ]
 }

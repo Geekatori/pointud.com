@@ -1,5 +1,7 @@
 <template>
   <Layout>
+    <g-image src="~/assets/images/servieres-copyright-aurelien-racault.jpg" class="bg" alt="" />
+    <div class="bg-overlay"></div>
     <div class="content">
       <h1>Mathieu Pointud</h1>
       <div class="media">
@@ -17,17 +19,12 @@
 </template>
 
 <style scoped lang="scss">
-  .content {
-    @media (max-width: 767px) {
-      position: static;
-      transform: translateY(0);
-    }
-  }
   strong {
     font-weight: 300;
   }
   h1 {
     font-size: 1.55rem;
+    margin-bottom: 0;
     @media (max-width: 767px) {
       text-align: center;
     }
@@ -38,7 +35,7 @@
 
     img {
       margin-right: 30px;
-      margin-top: 11px;
+      margin-top: 10px;
       opacity: .9;
     }
 

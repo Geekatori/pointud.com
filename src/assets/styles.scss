@@ -12,7 +12,7 @@ body {
   font-size: 1.7rem;
   font-weight: 300;
   letter-spacing: .2px;
-  line-height: 1.8;
+  line-height: 1.7;
   margin: 0;
   @media (max-width: 379px) {
     font-size: 1.5rem;
@@ -21,12 +21,38 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 1.1;
-  margin: 0;
+  margin: 0 0 4rem;
   text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin: 0 0 2rem;
+}
+
+a {
+  color: $clear;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin: 0 0 2rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
@@ -60,18 +86,24 @@ h1 {
 
   &:hover,
   &:focus {
+    text-decoration: none;
     &::before {
       max-width: 100%;
     }
   }
 }
 
+.main {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
 .content {
   box-sizing: border-box;
-  width: 100%;
-  padding: 75px 10%;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  top: 12rem;
+  max-width: 768px;
+  margin: 0 auto;
 }
+

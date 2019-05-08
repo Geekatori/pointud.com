@@ -3,12 +3,11 @@
     <header class="header">
       <g-link class="btn" data-hover="POINTUD.COM" to="/">POINTUD.COM</g-link>
       <nav class="header__nav">
+        <g-link class="btn" data-hover="Blog" to="/blog">Blog</g-link>
         <g-link class="btn" data-hover="À propos" to="/a-propos">À propos</g-link>
       </nav>
     </header>
     <div class="main">
-      <g-image src="~/assets/images/servieres-copyright-aurelien-racault.jpg" class="bg" alt="" />
-      <div class="bg-overlay"></div>
       <slot/>
     </div>
   </div>
@@ -31,6 +30,12 @@
 
     &__nav {
       margin-left: auto;
+    }
+
+    .btn {
+      + .btn {
+        margin-left: 1.5rem;
+      }
     }
   }
 
@@ -72,5 +77,5 @@ query {
 </static-query>
 
 <script>
-  console.log("On peut aussi discuter autour d'un 🍵 ou d'une 🍺 !");
+  console.log("On peut aussi discuter autour d'une 🍺 !");
 </script>
