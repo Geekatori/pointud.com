@@ -1,7 +1,6 @@
 <template>
   <Layout>
-    <g-image src="~/assets/images/servieres-copyright-aurelien-racault.jpg" class="bg" alt="" />
-    <div class="bg-overlay"></div>
+    <Background />
     <div class="content">
       <h1>Mathieu Pointud</h1>
       <div class="media">
@@ -17,6 +16,18 @@
     </div>
   </Layout>
 </template>
+
+<script>
+  import Background from '~/components/Background.vue'
+  export default {
+    components: {
+      Background
+    },
+    metaInfo: {
+      title: 'À propos de Mathieu Pointud'
+    }
+  }
+</script>
 
 <style scoped lang="scss">
   strong {
@@ -54,11 +65,3 @@
     }
   }
 </style>
-
-<script>
-export default {
-  metaInfo: {
-    title: 'À propos de Mathieu Pointud'
-  }
-}
-</script>

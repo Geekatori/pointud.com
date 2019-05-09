@@ -1,7 +1,6 @@
 <template>
   <Layout>
-    <g-image src="~/assets/images/servieres-copyright-aurelien-racault.jpg" class="bg" alt="" />
-    <div class="bg-overlay"></div>
+    <Background />
     <div class="content">
       <div itemscope itemtype="http://schema.org/Person">
         <h1 itemprop="name">Mathieu Pointud</h1>
@@ -15,6 +14,19 @@
     </div>
   </Layout>
 </template>
+
+<script>
+  import Background from '~/components/Background.vue'
+
+  export default {
+    components: {
+      Background
+    },
+    metaInfo: {
+      title: 'Intégrateur Web HTML CSS - Développeur Front End à Clermont-Ferrand'
+    }
+  }
+</script>
 
 <style scoped lang="scss">
   .content {
@@ -56,11 +68,3 @@
     }
   }
 </style>
-
-<script>
-export default {
-  metaInfo: {
-    title: 'Intégrateur Web HTML CSS - Développeur Front End à Clermont-Ferrand'
-  }
-}
-</script>
