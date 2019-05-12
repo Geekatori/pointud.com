@@ -6,13 +6,34 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 import '~/assets/styles.scss'
 
+import '~/assets/font-display.js'
+
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+
   head.link.push({
-    rel: 'stylesheet',
+    rel: 'dns-prefetch',
+    href: '//fonts.gstatic.com'
+  })
+
+  head.link.push({
+    rel: 'preconnect',
+    crossorigin: 'anonymous',
+    href: '//fonts.gstatic.com'
+  })
+
+  head.link.push({
+    rel: 'preload',
+    crossorigin: 'anonymous',
+    as: 'fetch',
     href: '//fonts.googleapis.com/css?family=Montserrat:300,700'
   })
+
+  //head.link.push({
+  //  rel: 'stylesheet',
+  //  href: '//fonts.googleapis.com/css?family=Montserrat:300,700'
+  //})
 
   //head.link.push({
   //  rel: 'stylesheet',
@@ -24,6 +45,4 @@ export default function (Vue, { router, head, isClient }) {
     content: 'Intégrateur HTML, Développeur Front-end'
   })
 }
-
-
 
