@@ -3,7 +3,7 @@
     <header class="header">
       <g-link class="btn" data-hover="POINTUD.COM" to="/">POINTUD.COM</g-link>
       <nav class="header__nav">
-        <g-link class="btn" data-hover="Blog" to="/blog">Blog</g-link>
+        <!-- <g-link class="btn" data-hover="Blog" to="/blog">Blog</g-link> -->
         <g-link class="btn" data-hover="À propos" to="/a-propos">À propos</g-link>
       </nav>
     </header>

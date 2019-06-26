@@ -11,6 +11,11 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
 
   head.link.push({
+    rel: 'manifest',
+    href: '/manifest.json'
+  })
+
+  head.link.push({
     rel: 'stylesheet',
     href: '//fonts.googleapis.com/css?family=Montserrat:300,700&font-display=swap'
   })
@@ -23,6 +28,11 @@ export default function (Vue, { router, head, isClient }) {
   head.meta.push({
     name: 'keywords',
     content: 'Intégrateur HTML, Développeur Front-end'
+  })
+
+  head.meta.push({
+    name: 'theme-color',
+    content: '#111'
   })
 }
 
