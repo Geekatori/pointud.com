@@ -12,14 +12,14 @@
 </template>
 
 <script>
-  export default {
-    metaInfo () {
-      return {
-        title: this.$page.blogPost.title
-      }
-    }
+export default {
+  metaInfo() {
+    return {
+      title: this.$page.blogPost.title
+    };
   }
-  /*
+};
+/*
   function getText(e) {
       let ret = '';
       let length = e.childNodes.length;
@@ -40,7 +40,6 @@
     document.querySelector('.reading-time span').innerHTML = time;
   }, false);
   */
-
 </script>
 <page-query>
   query BlogPost ($path: String!) {
@@ -53,9 +52,8 @@
 </page-query>
 
 <style scoped lang="scss">
-  .article {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.article {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 </style>
-

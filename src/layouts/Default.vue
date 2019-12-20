@@ -8,7 +8,7 @@
       </nav>
     </header>
     <div class="main">
-      <slot/>
+      <slot />
     </div>
   </div>
 </template>
@@ -22,37 +22,37 @@ query {
 </static-query>
 
 <script>
-  console.log("On peut aussi discuter autour d'une 🍺 !");
+console.log("On peut aussi discuter autour d'une 🍺 !");
 </script>
 
 <style scoped lang="scss">
-  .header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    min-height: 75px;
-    background-color: transparent;
-    z-index: 1030;
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  background-color: transparent;
+  z-index: 1030;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 
-    &__nav {
-      margin-left: auto;
-    }
-
-    .btn {
-      + .btn {
-        margin-left: 1.5rem;
-      }
-    }
+  &__nav {
+    margin-left: auto;
   }
 
-  .main {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
+  .btn {
+    + .btn {
+      margin-left: 1.5rem;
+    }
   }
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
 </style>

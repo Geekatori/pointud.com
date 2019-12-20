@@ -15,10 +15,10 @@ export default function (Vue, { router, head, isClient }) {
     href: '/manifest.json'
   })
 
-  head.link.push({
-    rel: 'stylesheet',
-    href: '//fonts.googleapis.com/css?family=Montserrat:300,700&font-display=swap'
-  })
+  //head.link.push({
+  //  rel: 'stylesheet',
+  //  href: '//fonts.googleapis.com/css?family=Montserrat:300,700&font-display=swap'
+  //})
 
   //head.link.push({
   //  rel: 'stylesheet',
@@ -35,6 +35,3 @@ export default function (Vue, { router, head, isClient }) {
     content: '#111'
   })
 }
-
-
-
