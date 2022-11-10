@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Calcul du jeu aux soupapes pour moteurs Ducati" />
+        <meta name="author" content="" />
+        <meta name="generator" content="" />
+        <title>Jeu aux soupapes</title>
+
+        <link href="css/styles.css" rel="stylesheet" crossorigin="anonymous" />
+    </head>
+    <body>
+        <header class="text-center">
+            <h1>Moteur Desmodue 1100 - 1100 cm<sup>3</sup></h1>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <table class="table table-striped table-responsive text-center">
+                        <tr>
+                            <td></td>
+                            <td colspan="8">Culasse verticale</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="4">Échappement</td>
+                            <td colspan="4">Admission</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Ouverture</td>
+                            <td colspan="2">Fermeture</td>
+                            <td colspan="2">Ouverture</td>
+                            <td colspan="2">Fermeture</td>
+                        </tr>
+                        <tr>
+                            <td>Jeu nécessaire</td>
+                            <td>min <input class="form-control-plaintext text-center" type="text" value="0.10" readonly data-type="spec" /></td>
+                            <td>max <input class="form-control-plaintext text-center" type="text" value="0.15" readonly data-type="spec" /></td>
+                            <td>min <input class="form-control-plaintext text-center" type="text" value="0.00" readonly data-type="spec" /></td>
+                            <td>max <input class="form-control-plaintext text-center" type="text" value="0.05" readonly data-type="spec" /></td>
+                            <td>min <input class="form-control-plaintext text-center" type="text" value="0.10" readonly data-type="spec" /></td>
+                            <td>max <input class="form-control-plaintext text-center" type="text" value="0.15" readonly data-type="spec" /></td>
+                            <td>min <input class="form-control-plaintext text-center" type="text" value="0.00" readonly data-type="spec" /></td>
+                            <td>max <input class="form-control-plaintext text-center" type="text" value="0.05" readonly data-type="spec" /></td>
+                        </tr>
+                        <tr>
+                            <td>Jeu mesuré</td>
+                            <td colspan="2"><input class="form-control text-center text-white" type="number" min="0" step="0.01" data-type="clearance" data-valve="veo" data-min="0.10" data-max="0.15" /></td>
+                            <td colspan="2"><input class="form-control text-center text-white" type="number" min="0" step="0.01" data-type="clearance" data-valve="vef" data-min="0.00" data-max="0.05" /></td>
+                            <td colspan="2"><input class="form-control text-center text-white" type="number" min="0" step="0.01" data-type="clearance" data-valve="vao" data-min="0.10" data-max="0.15" /></td>
+                            <td colspan="2"><input class="form-control text-center text-white" type="number" min="0" step="0.01" data-type="clearance" data-valve="vaf" data-min="0.00" data-max="0.05" /></td>
+                        </tr>
+                        <tr>
+                            <td>Pastille mesurée</td>
+                            <td colspan="2"><input class="form-control text-center" type="number" min="0" step="0.01" data-type="measured" data-valve="veo" /></td>
+                            <td colspan="2"><input class="form-control text-center" type="number" min="0" step="0.01" data-type="measured" data-valve="vef" /></td>
+                            <td colspan="2"><input class="form-control text-center" type="number" min="0" step="0.01" data-type="measured" data-valve="vao" /></td>
+                            <td colspan="2"><input class="form-control text-center" type="number" min="0" step="0.01" data-type="measured" data-valve="vaf" /></td>
+                        </tr>
+                        <tr>
+                            <td>Pastille conseillée</td>
+                            <td colspan="2"><input class="form-control-plaintext text-center" type="text" readonly data-type="suggested" data-valve="veo" /></td>
+                            <td colspan="2"><input class="form-control-plaintext text-center" type="text" readonly data-type="suggested" data-valve="vef" /></td>
+                            <td colspan="2"><input class="form-control-plaintext text-center" type="text" readonly data-type="suggested" data-valve="vao" /></td>
+                            <td colspan="2"><input class="form-control-plaintext text-center" type="text" readonly data-type="suggested" data-valve="vaf" /></td>
+                        </tr>
+                    </table>
+                    <table class="table table-striped table-responsive text-center">
+                        <tr>
+                            <td></td>
+                            <td colspan="8">Culasse horizontale</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="4">Échappement</td>
+                            <td colspan="4">Admission</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Ouverture</td>
+                            <td colspan="2">Fermeture</td>
+                            <td colspan="2">Ouverture</td>
+                            <td colspan="2">Fermeture</td>
+                        </tr>
+                        <tr>
+                            <td>Jeu nécessaire</td>
+                            <td>min <input class="form-control-plaintext text-center" type="text" value="0.10" readonly data-type="spec" /></td>
+                            <td>max <input class="form-control-plaintext text-center" type="text" value="0.15" readonly data-type="spec" /></td>
+                            <td>min <input class="form-control-plaintext text-center" type="text" value="0.00" readonly data-type="spec" /></td>
+                            <td>max <input class="form-control-plaintext text-center" type="text" value="0.05" readonly data-type="spec" /></td>
+                            <td>min <input class="form-control-plaintext text-center" type="text" value="0.10" readonly data-type="spec" /></td>
+                            <td>max <input class="form-control-plaintext text-center" type="text" value="0.15" readonly data-type="spec" /></td>
+                            <td>min <input class="form-control-plaintext text-center" type="text" value="0.00" readonly data-type="spec" /></td>
+                            <td>max <input class="form-control-plaintext text-center" type="text" value="0.05" readonly data-type="spec" /></td>
+                        </tr>
+                        <tr>
+                            <td>Jeu mesuré</td>
+                            <td colspan="2"><input class="form-control text-center text-white" type="number" min="0" step="0.01" data-type="clearance" data-valve="heo" data-min="0.10" data-max="0.15" /></td>
+                            <td colspan="2"><input class="form-control text-center text-white" type="number" min="0" step="0.01" data-type="clearance" data-valve="hef" data-min="0.00" data-max="0.05" /></td>
+                            <td colspan="2"><input class="form-control text-center text-white" type="number" min="0" step="0.01" data-type="clearance" data-valve="hao" data-min="0.10" data-max="0.15" /></td>
+                            <td colspan="2"><input class="form-control text-center text-white" type="number" min="0" step="0.01" data-type="clearance" data-valve="haf" data-min="0.00" data-max="0.05" /></td>
+                        </tr>
+                        <tr>
+                            <td>Pastille mesurée</td>
+                            <td colspan="2"><input class="form-control text-center" type="number" min="0" step="0.01" data-type="measured" data-valve="heo" /></td>
+                            <td colspan="2"><input class="form-control text-center" type="number" min="0" step="0.01" data-type="measured" data-valve="hef" /></td>
+                            <td colspan="2"><input class="form-control text-center" type="number" min="0" step="0.01" data-type="measured" data-valve="hao" /></td>
+                            <td colspan="2"><input class="form-control text-center" type="number" min="0" step="0.01" data-type="measured" data-valve="haf" /></td>
+                        </tr>
+                        <tr>
+                            <td>Pastille conseillée</td>
+                            <td colspan="2"><input class="form-control-plaintext text-center" type="text" readonly data-type="suggested" data-valve="heo" /></td>
+                            <td colspan="2"><input class="form-control-plaintext text-center" type="text" readonly data-type="suggested" data-valve="hef" /></td>
+                            <td colspan="2"><input class="form-control-plaintext text-center" type="text" readonly data-type="suggested" data-valve="hao" /></td>
+                            <td colspan="2"><input class="form-control-plaintext text-center" type="text" readonly data-type="suggested" data-valve="haf" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+        <script src="js/init.min.js"></script>
+    </body>
+</html>
